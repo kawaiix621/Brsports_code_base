@@ -125,3 +125,12 @@
   position: relative;
   right: 20vw;
 }
+
+.signin {
+  position: fixed;
+  bottom: 50px;
+}
+
+.signin button{
+  border: 3px solid #000;
+}
