@@ -3,6 +3,7 @@ import "./SearchFilter.css";
 
 const SearchFilter = ({ onSearch }) => {
   const [query, setQuery] = useState("");
+  const [activeButton, setActiveButton] = useState("");
 
   // Handle input change
   const handleChange = (e) => {
@@ -15,6 +16,7 @@ const SearchFilter = ({ onSearch }) => {
   const handleFilterClick = (title) => {
     setQuery(title);
     onSearch(title); // Trigger the search with the game title
+    setActiveButton(title); // Set the clicked button as active
   };
 
   return (
@@ -28,40 +30,31 @@ const SearchFilter = ({ onSearch }) => {
         />
       </div>
       <div>
-    
         <button 
-          className="searchbtn" 
+          className={`searchbtn ${activeButton === "codm" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("codm")}
         >
           Daily
-         
         </button>
         <button 
-          className="searchbtn" 
+          className={`searchbtn ${activeButton === "Fortnite" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("Fortnite")}
         >
           Weekly
-         
         </button>
         <button 
-          className="searchbtn" 
+          className={`searchbtn ${activeButton === "Free Fire" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("Free Fire")}
         >
           Sponsored
-          
         </button>
-
-        <button style={
-          {
-            width:'min-content'
-          }
-        }
-          className="searchbtn" 
+        <button 
+          className={`searchbtn ${activeButton === "" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("")}
+          style={{ width: 'min-content' }}
         >
-         All.
+          All
         </button>
-
       </div>
     </div>
   );

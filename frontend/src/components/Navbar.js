@@ -5,27 +5,38 @@ const Navbar = () => (
   <nav className="navbar">
     <ul>
       <li>
-        <NavLink to="/" exact activeClassName="active">
-          <img src='joystick.svg'></img>
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) => (isActive ? "activex" : "")}
+        >
+          <img src="joystick.svg" alt="Home" />
         </NavLink>
       </li>
       <li>
-        <NavLink to="/leaderboard" activeClassName="active">
-          <img src='leaderboard.svg'></img>
+        <NavLink
+          to="/leaderboard"
+          className={({ isActive }) => (isActive ? "activex" : "")}
+        >
+          <img src="leaderboard.svg" alt="Leaderboard" />
         </NavLink>
       </li>
       <li>
-        <NavLink to="/signin" activeClassName="active">
-          <img src="notifications.svg"></img>
+        <NavLink
+          to="/signin"
+          className={({ isActive }) => (isActive ? "activex" : "")}
+        >
+          <img src="notifications.svg" alt="Notifications" />
         </NavLink>
       </li>
-
       <li>
-        <NavLink to="/dashboard" activeClassName="active">
-          <img src='face.svg'></img>
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) => (isActive ? "activex" : "")}
+        >
+          <img src="face.svg" alt="Dashboard" />
         </NavLink>
       </li>
-
     </ul>
   </nav>
 );
