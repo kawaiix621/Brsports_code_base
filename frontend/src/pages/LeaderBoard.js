@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "./LeaderBoard.css"; // Optional: Add CSS for styling
+import "./LeaderBoard.css";
 
 const LeaderBoard = () => {
   const location = useLocation();
@@ -8,19 +8,19 @@ const LeaderBoard = () => {
   const matchId = searchParams.get("matchId");
   const [leaderboardData, setLeaderboardData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [viewMode, setViewMode] = useState("normal"); // 'normal' or 'user-focused'
+  const [viewMode, setViewMode] = useState("normal");
 
   const fetchLeaderboard = async (id) => {
     try {
       const response = await fetch(`https://brsports-code-base.onrender.com/leaderboard?matchId=${id}`);
       if (response.ok) {
         const data = await response.json();
-        return data[0]; // Assuming each match returns a single object in an array
+        return data[0];
       }
     } catch (error) {
       console.error(`Error fetching leaderboard for match ${id}:`, error);
     }
-    return null; // Return null if no data or error occurs
+    return null;
   };
 
   useEffect(() => {
@@ -28,14 +28,12 @@ const LeaderBoard = () => {
       setLoading(true);
       const allLeaderboards = [];
 
-      // Try to load cached data
       const cachedData = localStorage.getItem("leaderboardData");
       if (cachedData) {
         setLeaderboardData(JSON.parse(cachedData));
         setLoading(false);
       }
 
-      // Fetch latest data and update in the background
       if (matchId) {
         const data = await fetchLeaderboard(matchId);
         if (data) allLeaderboards.push(data);
@@ -50,7 +48,6 @@ const LeaderBoard = () => {
       setLeaderboardData(allLeaderboards);
       setLoading(false);
 
-      // Save data to localStorage for offline access
       localStorage.setItem("leaderboardData", JSON.stringify(allLeaderboards));
     };
 
@@ -60,13 +57,11 @@ const LeaderBoard = () => {
   const calculateUserWins = () => {
     const wins = {};
 
-    // Aggregate the number of wins for each user
     leaderboardData.forEach((entry) => {
       const { winner } = entry;
       wins[winner] = (wins[winner] || 0) + 1;
     });
 
-    // Convert the object to an array and sort by wins (descending order)
     const sortedWins = Object.entries(wins)
       .map(([user, winCount]) => ({ user, wins: winCount }))
       .sort((a, b) => b.wins - a.wins);
@@ -75,7 +70,7 @@ const LeaderBoard = () => {
     let currentPosition = 1;
     sortedWins.forEach((entry, index) => {
       if (index > 0 && entry.wins < sortedWins[index - 1].wins) {
-        currentPosition = index + 1; // Update the position only if wins are different
+        currentPosition = index + 1;
       }
       resultsWithPosition.push({ ...entry, position: currentPosition });
     });
@@ -87,7 +82,7 @@ const LeaderBoard = () => {
     let currentRank = 1;
     sortedWins.forEach((entry, index) => {
       if (index > 0 && entry.wins < sortedWins[index - 1].wins) {
-        currentRank = index + 1; // Update rank only if wins differ
+        currentRank = index + 1;
       }
       positions.push({ ...entry, position: currentRank });
     });
@@ -110,14 +105,21 @@ const LeaderBoard = () => {
 
   return (
     <div style={{ marginTop: "80px" }}>
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-evenly'
-      }}>
-        <button onClick={() => handleViewChange("normal")}>
+      <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+        <button
+          onClick={() => handleViewChange("normal")}
+          style={{
+            opacity: viewMode === "normal" ? 1 : 0.25
+          }}
+        >
           Global
         </button>
-        <button onClick={() => handleViewChange("user-focused")}>
+        <button
+          onClick={() => handleViewChange("user-focused")}
+          style={{
+            opacity: viewMode === "user-focused" ? 1 : 0.25
+          }}
+        >
           My Rank
         </button>
       </div>
