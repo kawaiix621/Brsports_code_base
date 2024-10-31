@@ -10,7 +10,7 @@ const LeaderBoard = () => {
   const [viewMode, setViewMode] = useState("normal"); // 'normal' or 'user-focused'
   const fetchLeaderboard = async (id) => {
     try {
-      const response = await fetch(`https://brsports.onrender.com/leaderboard?matchId=${id}`);
+      const response = await fetch(`https://brsports-code-base.onrender.com/leaderboard?matchId=${id}`);
       if (response.ok) {
         const data = await response.json();
         return data[0]; // Assuming each match returns a single object in an array

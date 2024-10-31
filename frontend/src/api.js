@@ -1,4 +1,4 @@
-const BASE_URL = "https://brsports.onrender.com";//let get it
+const BASE_URL = "https://brsports-code-base.onrender.com";//let get it
 
 // Fetch all matches
 export const getMatches = async () => {

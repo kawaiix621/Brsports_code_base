@@ -1,4 +1,4 @@
-// src/App.js
+// src/App.js let have it 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Splash from './components/Splash';
@@ -12,7 +12,6 @@ import CreateMatch from './pages/CreateMatch';
 import CreateLeaderBoard from './pages/CreateLeaderBoard';
 import Navbar from './components/Navbar';
 import Statusbar from './components/Statusbar';
-
 import './App.css';
 
 function App() {
@@ -29,7 +28,7 @@ function App() {
         <Splash />
       ) : (
         <>
-          <Navbar />
+        <Navbar />
           <Statusbar />
           <Routes>
             <Route path="/" element={<Home />} />
