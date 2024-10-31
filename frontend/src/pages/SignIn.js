@@ -1,19 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { signInWithGoogle, db, ref, get, set } from "../firebase"; 
 import "./SignIn.css";
 
 const SignIn = () => {
   const navigate = useNavigate();
-  const gifContainerRef = useRef(null); // Create a ref for the GIF container
-
-  useEffect(() => {
-    // Ensure the Tenor embed script loads correctly
-    const script = document.createElement("script");
-    script.src = "https://tenor.com/embed.js";
-    script.async = true;
-    gifContainerRef.current.appendChild(script);
-  }, []);
 
   const handleGoogleSignIn = async () => {
     try {
@@ -57,19 +48,8 @@ const SignIn = () => {
 
   return (
     <div className="signin-container">
-
-<div ref={gifContainerRef} className="tenor-gif-embed" 
-        data-postid="9904225151807140638" 
-        data-share-method="host" 
-        data-aspect-ratio="1" 
-        data-width="100vw">
-        <a href="https://tenor.com/view/i-will-hit-you-call-of-duty-modern-warfare-iii-fighting-battle-call-of-duty-gif-9904225151807140638">
-          I Will Hit You Call Of Duty Modern Warfare III GIF
-        </a> 
-        from <a href="https://tenor.com/search/i+will+hit+you-gifs">I Will Hit You GIFs</a>
-      </div>
-
       <div className="pop">
+        <div style={{ height: '70px' }}></div>
         <p className="pop-right">BRsports</p>
         <p className="games-list">
           BRsports is a gaming platform for mobile battle royale games, 
@@ -104,10 +84,6 @@ const SignIn = () => {
           Login :)
         </button>
       </div>
-
-
-
-
 
       <div style={{ height: '200px' }}></div>
     </div>

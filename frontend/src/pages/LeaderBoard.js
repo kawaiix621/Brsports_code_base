@@ -114,7 +114,9 @@ const LeaderBoard = () => {
         display: 'flex',
         justifyContent: 'space-evenly'
       }}>
-        <button onClick={() => handleViewChange("normal")}>Global Leader</button>
+        <button onClick={() => handleViewChange("normal")}>
+          Global
+        </button>
         <button onClick={() => handleViewChange("user-focused")}>
           My Rank
         </button>
