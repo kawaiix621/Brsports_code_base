@@ -30,13 +30,7 @@ const SearchFilter = ({ onSearch }) => {
         />
       </div>
 
-      <div 
-      style={{
-        display:'flex',
-        overflowX:'scroll',
-        height:'auto',
-        padding:'0px'
-      }}>
+      <div>
       <button 
           className={`searchbtn ${activeButton === "" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("")}

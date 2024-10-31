@@ -8,14 +8,14 @@
   .searchfilter input {
     border: none;
     padding: 10px;
-    background-color: #191622; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: #ffffff; /* Dark background */
+    color: #000000; /* White text */
     font-size: 16px;
     transition: border 0.3s ease;
     z-index: 999;
     margin:2.5vw;
     width:90vw;
-    height:35px;
+    height:30px;
     border-radius: 10px;
   }
   
@@ -32,7 +32,9 @@
   background-color: rgb(45, 34, 65);
   color: #fff;
   width: auto;
-  height: 40px;
+  height: auto;
+  font-size: smaller;
+  margin: 5px;
 }
 
 /* Ensure activeX class has high specificity */
