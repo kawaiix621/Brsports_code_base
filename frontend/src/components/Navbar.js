@@ -21,14 +21,7 @@ const Navbar = () => (
           <img src="leaderboard.svg" alt="Leaderboard" />
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/signin"
-          className={({ isActive }) => (isActive ? "activex" : "")}
-        >
-          <img src="notifications.svg" alt="Notifications" />
-        </NavLink>
-      </li>
+      
       <li>
         <NavLink
           to="/dashboard"

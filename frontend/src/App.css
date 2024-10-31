@@ -10,7 +10,7 @@ body {
 nav ul {
   width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style: none;
   background-color: #191622;
   border-top: 1px solid #7102f186;
@@ -49,7 +49,7 @@ nav img {
   font-size: x-large;
   opacity: 100%;
   background-color: #7102f1;
-  border-radius: 100px;
+  border-radius: 10px;
 }
 
 
@@ -108,14 +108,6 @@ nav img {
 }
 
 
-.signin button {
-  position: fixed;
-  bottom: 100px;
-  left: 30vw;
-  border: 3px solid #000000;
-  font-size: larger;
-  font-weight: bold;
-}
 
 button {
   border-radius: 10px;
@@ -126,4 +118,5 @@ button {
   background-color: #ffffff;
   width: 40vw;
   height: 60px;
+  font-size: large;
 }

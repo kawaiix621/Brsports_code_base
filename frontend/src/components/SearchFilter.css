@@ -8,19 +8,19 @@
   .searchfilter input {
     border: none;
     padding: 10px;
-    background-color: #ffffff; /* Dark background */
-    color: #000000; /* White text */
+    background-color: #191622; /* Dark background */
+    color: #ffffff; /* White text */
     font-size: 16px;
     transition: border 0.3s ease;
     z-index: 999;
     margin:2.5vw;
     width:90vw;
     height:35px;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   
   .search-input::placeholder {
-    color: #888; /* Lighter placeholder text */
+    color: #888888; /* Lighter placeholder text */
   }
   
   .search-input:focus {
@@ -32,7 +32,7 @@
   background-color: rgb(45, 34, 65);
   color: #fff;
   width: auto;
-  height: auto;
+  height: 40px;
 }
 
 /* Ensure activeX class has high specificity */

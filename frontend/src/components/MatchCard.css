@@ -1,6 +1,6 @@
 .matchcard {
   transform: scale(0.98);
-    background-color: #0000006e;
+    background-color: #0000005b;
     border-radius: 15px;
    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     overflow: hidden;

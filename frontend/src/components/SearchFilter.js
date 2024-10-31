@@ -29,7 +29,14 @@ const SearchFilter = ({ onSearch }) => {
           placeholder="What do you want to play?"
         />
       </div>
-      <div>
+
+      <div 
+      style={{
+        display:'flex',
+        overflowX:'scroll',
+        height:'auto',
+        padding:'0px'
+      }}>
       <button 
           className={`searchbtn ${activeButton === "" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("")}
@@ -39,24 +46,45 @@ const SearchFilter = ({ onSearch }) => {
         </button>
 
         <button 
-          className={`searchbtn ${activeButton === "codm" ? "activeX" : ""}`} 
-          onClick={() => handleFilterClick("codm")}
+          className={`searchbtn ${activeButton === "Call of Duty" ? "activeX" : ""}`} 
+          onClick={() => handleFilterClick("Call of Duty")}
         >
-          Discover something new
+          call_of_duty
         </button>
 
         <button 
-          className={`searchbtn ${activeButton === "Fortnite" ? "activeX" : ""}`} 
-          onClick={() => handleFilterClick("Fortnite")}
+          className={`searchbtn ${activeButton === "COD Warzone Mobile" ? "activeX" : ""}`} 
+          onClick={() => handleFilterClick("COD Warzone Mobile")}
         >
-          Daily
+          cod_warzone_mobile
         </button>
         
         <button 
           className={`searchbtn ${activeButton === "Free Fire" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("Free Fire")}
         >
-          Sponsored
+          free_fire
+        </button>
+
+        <button 
+          className={`searchbtn ${activeButton === "Blood Strike" ? "activeX" : ""}`} 
+          onClick={() => handleFilterClick("Blood Strike")}
+        >
+          blood_strike
+        </button>
+
+        <button 
+          className={`searchbtn ${activeButton === "Farlight 84" ? "activeX" : ""}`} 
+          onClick={() => handleFilterClick("Farlight 84")}
+        >
+          Farlight_84
+        </button>
+
+        <button 
+          className={`searchbtn ${activeButton === "PUBG Mobile" ? "activeX" : ""}`} 
+          onClick={() => handleFilterClick("PUBG Mobile")}
+        >
+          PUBG_mobile
         </button>
       
       </div>
