@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./LeaderBoard.css"; // Optional: Add CSS for styling
+
 const LeaderBoard = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
@@ -8,6 +9,7 @@ const LeaderBoard = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [viewMode, setViewMode] = useState("normal"); // 'normal' or 'user-focused'
+
   const fetchLeaderboard = async (id) => {
     try {
       const response = await fetch(`https://brsports-code-base.onrender.com/leaderboard?matchId=${id}`);
@@ -20,10 +22,20 @@ const LeaderBoard = () => {
     }
     return null; // Return null if no data or error occurs
   };
+
   useEffect(() => {
     const loadLeaderboards = async () => {
       setLoading(true);
       const allLeaderboards = [];
+
+      // Try to load cached data
+      const cachedData = localStorage.getItem("leaderboardData");
+      if (cachedData) {
+        setLeaderboardData(JSON.parse(cachedData));
+        setLoading(false);
+      }
+
+      // Fetch latest data and update in the background
       if (matchId) {
         const data = await fetchLeaderboard(matchId);
         if (data) allLeaderboards.push(data);
@@ -34,11 +46,17 @@ const LeaderBoard = () => {
           else break;
         }
       }
+      
       setLeaderboardData(allLeaderboards);
       setLoading(false);
+
+      // Save data to localStorage for offline access
+      localStorage.setItem("leaderboardData", JSON.stringify(allLeaderboards));
     };
+
     loadLeaderboards();
   }, [matchId]);
+
   const calculateUserWins = () => {
     const wins = {};
 
@@ -52,7 +70,7 @@ const LeaderBoard = () => {
     const sortedWins = Object.entries(wins)
       .map(([user, winCount]) => ({ user, wins: winCount }))
       .sort((a, b) => b.wins - a.wins);
-    // Manage ties by assigning the same position to users with equal wins
+
     const resultsWithPosition = [];
     let currentPosition = 1;
     sortedWins.forEach((entry, index) => {
@@ -63,6 +81,7 @@ const LeaderBoard = () => {
     });
     return resultsWithPosition;
   };
+
   const assignPositions = (sortedWins) => {
     const positions = [];
     let currentRank = 1;
@@ -74,7 +93,9 @@ const LeaderBoard = () => {
     });
     return positions;
   };
+
   const handleViewChange = (mode) => setViewMode(mode);
+
   if (loading) {
     return (
       <div style={{ height: "60px" }}>
@@ -82,9 +103,11 @@ const LeaderBoard = () => {
       </div>
     );
   }
+
   if (leaderboardData.length === 0) {
     return <p>No leaderboard data available.</p>;
   }
+
   return (
     <div style={{ marginTop: "80px" }}>
       <div style={{
@@ -92,7 +115,6 @@ const LeaderBoard = () => {
         justifyContent: 'space-evenly'
       }}>
         <button onClick={() => handleViewChange("normal")}>Global Leader</button>
-
         <button onClick={() => handleViewChange("user-focused")}>
           My Rank
         </button>
@@ -144,4 +166,5 @@ const LeaderBoard = () => {
     </div>
   );
 };
+
 export default LeaderBoard;
