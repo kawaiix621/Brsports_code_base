@@ -1,13 +1,13 @@
 .matchcard {
-    background-color: #00000073;
+  transform: scale(0.98);
+    background-color: #0000006e;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     overflow: hidden;
     cursor: pointer;
     margin: 15px;
     padding: 10px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
   }
   
@@ -41,12 +41,12 @@
   
   .matchcard:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+    box-shadow: 0 50px 100px rgb(0, 0, 0);
   }
   
   .matchcard:active {
     transform: scale(0.98);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .matchcard .status{

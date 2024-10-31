@@ -32,8 +32,7 @@ const Navbar = () => (
       <li>
         <NavLink
           to="/dashboard"
-          className={({ isActive }) => (isActive ? "activex" : "")}
-        >
+          className={({ isActive }) => (isActive ? "activex" : "")}>
           <img src="face.svg" alt="Dashboard" />
         </NavLink>
       </li>

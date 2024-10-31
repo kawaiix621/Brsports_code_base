@@ -23,10 +23,12 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 15px;
+  margin: 0px;
 }
 
 nav ul li a {
+  display: flex;
+  justify-content: center;
   margin: 0px;
   font-size: medium;
   color: rgb(255, 255, 255);
@@ -35,10 +37,12 @@ nav ul li a {
   padding: 10px;
   border-radius: 10px;
   opacity: 25%;
+  height: 50%;
+
 }
 
 nav img {
-  width: 45%;
+  width: 100%;
 }
 
 .activex {
@@ -79,38 +83,47 @@ nav img {
   width: 60vw;
 }
 
-.creatmatch{
+.creatmatch {
   display: block;
   text-align: center;
 }
 
-.creatmatch input{
+.creatmatch input {
   height: 35px;
   border: none;
   width: 90vw;
   padding: 10px;
-  background-color: #ffffff; /* Dark background */
-  color: #000000; /* White text */
+  background-color: #ffffff;
+  /* Dark background */
+  color: #000000;
+  /* White text */
   font-size: 16px;
   transition: border 0.3s ease;
   margin: 10px;
 }
 
-.form-container{
+.form-container {
   text-align: center;
   margin-top: 80px;
 }
 
 
-
-button {
-border-radius: 10px;
-border: none;
-margin: 10px;
-border-radius: 100px;
-padding: 10px 20px;
-background-color: #ffffff;
-width: 40vw;
-height: 60px;
+.signin button {
+  position: fixed;
+  bottom: 100px;
+  left: 30vw;
+  border: 3px solid #000000;
+  font-size: larger;
+  font-weight: bold;
 }
 
+button {
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  border-radius: 100px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  width: 40vw;
+  height: 60px;
+}

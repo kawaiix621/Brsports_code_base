@@ -26,35 +26,39 @@ const SearchFilter = ({ onSearch }) => {
           type="text"
           value={query}
           onChange={handleChange}
-          placeholder="Search games by title..."
+          placeholder="What do you want to play?"
         />
       </div>
       <div>
-        <button 
-          className={`searchbtn ${activeButton === "codm" ? "activeX" : ""}`} 
-          onClick={() => handleFilterClick("codm")}
-        >
-          Daily
-        </button>
-        <button 
-          className={`searchbtn ${activeButton === "Fortnite" ? "activeX" : ""}`} 
-          onClick={() => handleFilterClick("Fortnite")}
-        >
-          Weekly
-        </button>
-        <button 
-          className={`searchbtn ${activeButton === "Free Fire" ? "activeX" : ""}`} 
-          onClick={() => handleFilterClick("Free Fire")}
-        >
-          Sponsored
-        </button>
-        <button 
+      <button 
           className={`searchbtn ${activeButton === "" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("")}
           style={{ width: 'min-content' }}
         >
           All
         </button>
+
+        <button 
+          className={`searchbtn ${activeButton === "codm" ? "activeX" : ""}`} 
+          onClick={() => handleFilterClick("codm")}
+        >
+          Discover something new
+        </button>
+
+        <button 
+          className={`searchbtn ${activeButton === "Fortnite" ? "activeX" : ""}`} 
+          onClick={() => handleFilterClick("Fortnite")}
+        >
+          Daily
+        </button>
+        
+        <button 
+          className={`searchbtn ${activeButton === "Free Fire" ? "activeX" : ""}`} 
+          onClick={() => handleFilterClick("Free Fire")}
+        >
+          Sponsored
+        </button>
+      
       </div>
     </div>
   );

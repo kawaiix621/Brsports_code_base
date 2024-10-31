@@ -101,7 +101,7 @@ const SignIn = () => {
      
       <div className="signin">
         <button type="button" onClick={handleGoogleSignIn}>
-          Get Started
+          Login :)
         </button>
       </div>
 
