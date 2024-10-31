@@ -1,0 +1,33 @@
+/* src/components/Splash.css */
+.splash-screen {
+    overflow-y: none;
+    overflow-x: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #7102f1;
+    color: #ffffff;
+    font-size:xxx-large;
+    font-weight: bold;
+    margin: 0px;
+  }
+  
+/* Splash.css */
+
+@keyframes dropDown {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .splash-screen img {
+    animation: dropDown 2.5s ease-out;
+    opacity: 0; /* Start hidden */
+    animation-fill-mode: forwards; /* Retain final state after animation */
+   }
+  

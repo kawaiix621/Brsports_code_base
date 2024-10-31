@@ -1,0 +1,12 @@
+.dashboard{
+    text-align: center;
+}
+.dashboard img{
+    width: 30vw;
+    height: 30vw;
+    margin: 10px;
+     border-radius: 50px;
+    padding: 10px;
+}
+
+

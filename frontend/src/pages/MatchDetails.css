@@ -1,0 +1,40 @@
+.matchdetails img {
+  border-radius: 10px;
+}
+
+.matchdetails h1 {
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+}
+
+.matchdetails .prize {
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+}
+
+.pop-left2 {
+  background-color: #00000036;
+  box-shadow: 10px 10px #000;
+  color: #c18aff;
+  padding: 10px;
+  width: 35vw;
+  height: min-content;
+  position: relative;
+  right: 5vw;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px;
+  margin-top: 0px;
+}
+
+.pop-right2 {
+  color: rgb(0, 0, 0);
+  background-color: #ffffffd5;
+  box-shadow: 10px 10px #ffffff2c;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0px;
+  margin-bottom: 30px;
+  border-radius: 0px;
+}

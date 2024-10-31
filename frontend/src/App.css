@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #191622;
+  color: white;
+}
+
+
+nav ul {
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #191622;
+  border-top: 1px solid #7102f186;
+  padding: 10px;
+  margin: 0px;
+  height: 60px;
+  position: fixed;
+  bottom: -2px;
+  z-index: 100;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  margin: 0px;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 25%;
+}
+
+nav img {
+  width: 65%;
+}
+
+.active {
+  font-size: x-large;
+  opacity: 100%;
+  background-color: #7102f1;
+}
+
+
+.statusbar {
+  border-bottom: 1px solid #7102f186;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  height: 70px;
+  background-color: #1916227a;
+  backdrop-filter: blur(2px);
+  /* Apply blur effect */
+  -webkit-backdrop-filter: blur(2px);
+  /* For Safari support */
+  z-index: 100;
+  /* Ensure it stays above other elements */
+}
+
+.statusbar h1 {
+  font-size: x-large;
+  padding: 10px;
+  color: #ba7dff;
+}
+
+button {
+  background-color: rgb(213, 121, 255);
+  color: #000000;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+  border: 3px solid #000000;
+  padding: 20px;
+  margin: 10px;
+  width: 40vw;
+}
+
+.slideimg {
+  margin: 5px;
+  border-radius: 10px;
+  width: 60vw;
+}
+
+.creatmatch{
+  display: block;
+  text-align: center;
+}
+
+.creatmatch input{
+  height: 35px;
+  border: none;
+  width: 90vw;
+  padding: 10px;
+  background-color: #ffffff; /* Dark background */
+  color: #000000; /* White text */
+  font-size: 16px;
+  transition: border 0.3s ease;
+  margin: 10px;
+}
+
+.form-container{
+  text-align: center;
+  margin-top: 80px;
+}
