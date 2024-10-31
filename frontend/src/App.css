@@ -10,9 +10,7 @@ body {
 nav ul {
   width: 100vw;
   display: flex;
-  justify-content:space-between;
-  justify-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style: none;
   background-color: #191622;
   border-top: 1px solid #7102f186;
