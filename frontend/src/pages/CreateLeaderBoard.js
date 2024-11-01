@@ -1,3 +1,4 @@
+// CreateLeaderBoard.js
 import React, { useState } from 'react';
 import { db, ref, set } from '../firebase'; // Adjust this import path if necessary
 
@@ -10,8 +11,12 @@ const CreateLeaderBoard = () => {
     e.preventDefault();
 
     try {
-      // Generate a unique leaderboard entry ID
-      const leaderboardEntryID = `leaderboard_${Date.now()}`;
+      // Generate a unique leaderboard entry ID, incrementing from 1
+      let lastLeaderboardId = parseInt(localStorage.getItem("lastLeaderboardId")) || 0;
+      lastLeaderboardId++;
+      const leaderboardEntryID = `leaderboard${lastLeaderboardId}`;
+
+      localStorage.setItem("lastLeaderboardId", lastLeaderboardId.toString()); // Update for the next entry
 
       // Define the leaderboard entry data
       const leaderboardData = {

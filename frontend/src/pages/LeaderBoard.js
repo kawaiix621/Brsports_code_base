@@ -1,3 +1,4 @@
+// LeaderBoard.js
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./LeaderBoard.css";
@@ -39,7 +40,7 @@ const LeaderBoard = () => {
         if (data) allLeaderboards.push(data);
       } else {
         for (let i = 1; i <= 10; i++) {
-          const data = await fetchLeaderboard(`match${i}`);
+          const data = await fetchLeaderboard(`leaderboard${i}`); // Updated to fetch using 'leaderboard' IDs
           if (data) allLeaderboards.push(data);
           else break;
         }
