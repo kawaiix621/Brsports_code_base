@@ -13,32 +13,39 @@ const CreateMatch = () => {
   const [prizePool, setPrizePool] = useState('');
   const [sponsors, setSponsors] = useState('');
   const [links, setLinks] = useState('');
+  const [participants, setParticipants] = useState(['']); // You can modify this according to your needs
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Create a unique match ID (could use roomID or a timestamp)
     const matchID = `match_${Date.now()}`;
 
-    // Define the match data structure
+    // Define the match data structure in the desired format
     const matchData = {
-      title,
       date,
+      details: shortDetails, // Use shortDetails for details
+      fullDetail: {
+        about: longDetails, // Use longDetails for about
+        prizePool,
+        rules: rules.split(',').map(rule => rule.trim()) // Split rules by comma and trim spaces
+      },
+      id: matchID, // Assign the match ID
+      img: imageURL,
+      links: links.split(',').map(link => ({ name: link.trim(), url: link.trim() })), // Split links and map to objects
+      participants,
       roomID,
-      imageURL,
-      shortDetails,
-      longDetails,
-      rules,
-      prizePool,
-      sponsors,
-      links,
+      sponsors: sponsors.split(',').map(sponsor => sponsor.trim()), // Split sponsors by comma and trim spaces
+      status: 'upcoming', // Default status
+      timestamp: new Date().toISOString(), // Current timestamp in ISO format
+      title
     };
 
     try {
       // Send the data to Firebase
       await set(ref(db, `matches/${matchID}`), matchData);
       alert('Match created successfully!');
-      
+
       // Clear input fields
       setTitle('');
       setDate('');
@@ -50,6 +57,7 @@ const CreateMatch = () => {
       setPrizePool('');
       setSponsors('');
       setLinks('');
+      setParticipants(['']); // Clear participants
     } catch (err) {
       console.error('Failed to create match:', err);
       alert('Failed to create match');
@@ -91,7 +99,7 @@ const CreateMatch = () => {
           />
           <input
             type="text"
-            placeholder="Match Rules"
+            placeholder="Match Rules (comma separated)"
             value={rules}
             onChange={(e) => setRules(e.target.value)}
             required
@@ -118,16 +126,23 @@ const CreateMatch = () => {
           />
           <input
             type="text"
-            placeholder="Sponsors"
+            placeholder="Sponsors (comma separated)"
             value={sponsors}
             onChange={(e) => setSponsors(e.target.value)}
             required
           />
           <input
             type="text"
-            placeholder="Links"
+            placeholder="Links (comma separated)"
             value={links}
             onChange={(e) => setLinks(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Participants (comma separated)"
+            value={participants.join(',')}
+            onChange={(e) => setParticipants(e.target.value.split(',').map(p => p.trim()))}
             required
           />
         </div>
