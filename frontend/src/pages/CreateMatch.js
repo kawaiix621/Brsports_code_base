@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { createMatch } from '../api';
+import { db, ref, set } from '../firebase'; // Adjust this import path if necessary
 import '../App.css';
 
 const CreateMatch = () => {
@@ -16,20 +16,30 @@ const CreateMatch = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Create a unique match ID (could use roomID or a timestamp)
+    const matchID = `match_${Date.now()}`;
+
+    // Define the match data structure
+    const matchData = {
+      title,
+      date,
+      roomID,
+      imageURL,
+      shortDetails,
+      longDetails,
+      rules,
+      prizePool,
+      sponsors,
+      links,
+    };
+
     try {
-      await createMatch({
-        title,
-        date,
-        roomID,
-        imageURL,
-        shortDetails,
-        longDetails,
-        rules,
-        prizePool,
-        sponsors,
-        links,
-      });
+      // Send the data to Firebase
+      await set(ref(db, `matches/${matchID}`), matchData);
       alert('Match created successfully!');
+      
+      // Clear input fields
       setTitle('');
       setDate('');
       setRoomID('');
@@ -41,7 +51,7 @@ const CreateMatch = () => {
       setSponsors('');
       setLinks('');
     } catch (err) {
-      console.error(err);
+      console.error('Failed to create match:', err);
       alert('Failed to create match');
     }
   };
