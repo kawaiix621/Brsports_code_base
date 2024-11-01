@@ -170,5 +170,4 @@ const LeaderBoard = () => {
     </div>
   );
 };
-
 export default LeaderBoard;

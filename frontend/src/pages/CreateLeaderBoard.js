@@ -11,7 +11,7 @@ const CreateLeaderBoard = () => {
     e.preventDefault();
 
     try {
-      // Generate a unique leaderboard entry ID, incrementing from 1
+      //fet last leadervoard id from firebase
       let lastLeaderboardId = parseInt(localStorage.getItem("lastLeaderboardId")) || 0;
       lastLeaderboardId++;
       const leaderboardEntryID = `leaderboard${lastLeaderboardId}`;
