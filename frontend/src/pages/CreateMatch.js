@@ -24,19 +24,21 @@ const CreateMatch = () => {
     // Define the match data structure in the desired format
     const matchData = {
       date,
-      details: shortDetails, // Use shortDetails for details
+      details: shortDetails, // Use shortDetails for the 'details' key
       fullDetail: {
-        about: longDetails, // Use longDetails for about
+        about: longDetails, // Use longDetails for 'about'
         prizePool,
         rules: rules.split(',').map(rule => rule.trim()) // Split rules by comma and trim spaces
       },
       id: matchID, // Assign the match ID
-      img: imageURL,
-      links: links.split(',').map(link => ({ name: link.trim(), url: link.trim() })), // Split links and map to objects
-      participants,
+      img: imageURL, // Rename imageURL to img
+      links: links.split(',').map(link => {
+        const url = link.trim();
+        const name = url.replace(/^https?:\/\//, '').split('.')[0];
+        return { name, url };
+      }), // Split links and map to objects with name and URL
       roomID,
       sponsors: sponsors.split(',').map(sponsor => sponsor.trim()), // Split sponsors by comma and trim spaces
-      status: 'upcoming', // Default status
       timestamp: new Date().toISOString(), // Current timestamp in ISO format
       title
     };
