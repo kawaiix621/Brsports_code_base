@@ -4,9 +4,10 @@
   }
   
   table {
+    width: 100%;
     border-collapse: collapse;
     margin:5vw;
-    width:80vw;
+    width:90vw;
   }
   
   th, td {
