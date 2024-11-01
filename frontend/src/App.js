@@ -44,12 +44,12 @@ function MainContent() {
       <Statusbar />
       <Routes>
         <Route path="/signin" element={<SignIn />} />
+          <Route path="/leaderboard" element={<LeaderBoard />} />
+          <Route path="/admin/create-match" element={<CreateMatch />} />
         <Route path="/matches/:id" element={<MatchDetails />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/leaderboard" element={<LeaderBoard />} />
-          <Route path="/admin/create-match" element={<CreateMatch />} />
           <Route path="/admin/create-leaderboard" element={<CreateLeaderBoard />} />
         </Route>
       </Routes>
