@@ -37,8 +37,10 @@ const CreateMatch = () => {
         const name = url.replace(/^https?:\/\//, '').split('.')[0];
         return { name, url };
       }), // Split links and map to objects with name and URL
+      participants: participants.map(p => p.trim()), // Split participants by comma and trim spaces
       roomID,
       sponsors: sponsors.split(',').map(sponsor => sponsor.trim()), // Split sponsors by comma and trim spaces
+      status: 'upcoming', // Assuming the status is initially "upcoming"
       timestamp: new Date().toISOString(), // Current timestamp in ISO format
       title
     };
