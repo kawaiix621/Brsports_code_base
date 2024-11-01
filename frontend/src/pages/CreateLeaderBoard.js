@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { createLeaderBoardEntry } from '../api'; // Ensure you're importing the function correctly
+import { db, ref, set } from '../firebase'; // Adjust this import path if necessary
 
 const CreateLeaderBoard = () => {
   const [matchID, setMatchID] = useState('');
@@ -23,8 +23,8 @@ const CreateLeaderBoard = () => {
         date: new Date().toISOString() // Add a timestamp for the entry
       };
 
-      // Send the data to your API function
-      await createLeaderBoardEntry(leaderboardData);
+      // Send the data to Firebase
+      await set(ref(db, `leaderboards/${leaderboardEntryID}`), leaderboardData);
       alert('Leaderboard entry created!');
 
       // Clear input fields
