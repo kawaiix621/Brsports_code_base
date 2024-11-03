@@ -43,14 +43,14 @@ const SearchFilter = ({ onSearch }) => {
           className={`searchbtn ${activeButton === "Call of Duty" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("Call of Duty")}
         >
-          call_of_duty
+          upcoming
         </button>
 
         <button 
           className={`searchbtn ${activeButton === "COD Warzone Mobile" ? "activeX" : ""}`} 
           onClick={() => handleFilterClick("COD Warzone Mobile")}
         >
-          cod_warzone_mobile
+          Completed
         </button>
         
         <button 
