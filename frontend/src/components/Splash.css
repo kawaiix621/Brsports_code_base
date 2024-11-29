@@ -9,8 +9,6 @@
     width: 100vw;
     background-color: #7102f1;
     color: #ffffff;
-    font-size:xxx-large;
-    font-weight: bold;
     margin: 0px;
   }
   
@@ -29,5 +27,7 @@
     animation: dropDown 2.5s ease-out;
     opacity: 0; /* Start hidden */
     animation-fill-mode: forwards; /* Retain final state after animation */
+    width: 150px;
+    height: auto;
    }
   

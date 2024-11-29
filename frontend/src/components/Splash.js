@@ -8,9 +8,7 @@ const Splash = () => (
     <div style={{
         display:'block'
     }}>
-   <img style={{
-    width:'35vw'
-   }}
+   <img 
    src="logo.png"></img>
     </div>
 
