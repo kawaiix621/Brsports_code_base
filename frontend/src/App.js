@@ -34,10 +34,10 @@ function App() {
 
 function MainContent() {
   const location = useLocation();
-  
+
   // List of routes where the Navbar should be hidden
   const hideNavbarRoutes = ["/signin", "/admin/create-match", "/admin/create-leaderboard"];
-  
+
   // Hide Navbar if the current route matches any of the routes in hideNavbarRoutes
   const hideNavbar = hideNavbarRoutes.includes(location.pathname);
 
@@ -47,14 +47,19 @@ function MainContent() {
       <Statusbar />
       <Routes>
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/" element={<Home />} />
         <Route path="/leaderboard" element={<LeaderBoard />} />
-        <Route path="/admin/create-match" element={<CreateMatch />} />
-        <Route path="/admin/create-leaderboard" element={<CreateLeaderBoard />} />
         <Route path="/matches/:id" element={<MatchDetails />} />
+
+         <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/admin/create-match" element={<CreateMatch />} />
+          <Route path="/admin/create-leaderboard" element={<CreateLeaderBoard />} />
+     
+
         <Route element={<ProtectedRoute />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          </Route>
+    
+    
+       </Route>
       </Routes>
     </>
   );

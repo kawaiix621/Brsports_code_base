@@ -9,7 +9,19 @@
     padding: 10px;
     display: flex; 
     flex-direction: column;
+    width: 21vw;
+    height:21vw;
   }
+
+
+    /* Media query for smaller screens (mobile) */
+  @media (max-width: 768px) {
+      .matchcard {
+        width: auto;
+        height:auto
+  }
+    }
+  
   
   .matchcard p{
     margin: 0;
@@ -19,7 +31,7 @@
 
   .matchcard img {
     width: 100%;
-    height:70vw;
+    height:auto;
     object-fit: cover;
     border-radius: 10px;
   }

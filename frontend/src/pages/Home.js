@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getMatches } from "../api";
 import MatchCard from "../components/MatchCard";
 import SearchFilter from "../components/SearchFilter"; // Import the filter
+import "./Home.css"
 const CACHE_KEY = "cachedMatches"; // Key for localStorage
 const Home = () => {
   const [matches, setMatches] = useState([]);
@@ -34,10 +35,17 @@ const Home = () => {
     setFilteredMatches(filtered);
   };
   return (
+
     <div>
-      <div style={{ height: "140px" }}></div>
+      <div style={{ height: "70px" }}></div>
+
+<div className="maindiv">
+
       {/* Search Filter */}
       <SearchFilter onSearch={handleSearch} />
+
+
+      <div className="matches">
       {/* Matches */}
       {filteredMatches.length > 0 ? (
         filteredMatches.map((match) => (
@@ -46,7 +54,13 @@ const Home = () => {
       ) : (
         <p>No matches found.</p>
       )}
+      </div>
+</div>
+
+     
+
     </div>
+
   );
 };
 export default Home;

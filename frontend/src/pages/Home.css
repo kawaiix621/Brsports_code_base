@@ -1,0 +1,21 @@
+.maindiv{
+    display: flex;
+}
+/* Media query for smaller screens (mobile) */
+@media (max-width: 768px) {
+    .maindiv {
+  display: block; }
+  }
+
+
+  .matches{
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  /* Media query for smaller screens (mobile) */
+@media (max-width: 768px) {
+    .matches {
+    display: block;
+}
+  }
