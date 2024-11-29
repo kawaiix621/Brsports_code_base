@@ -12,8 +12,8 @@ nav ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  background-color: #191622;
-  border-top: 1px solid #7102f186;
+  background-color: #000000;
+  border-top: 1px solid #f14602;
   padding: 10px;
   margin: 0px;
   height: 60px;
@@ -48,13 +48,13 @@ nav img {
 .activex {
   font-size: x-large;
   opacity: 100%;
-  background-color: #7102f1;
+  background-color: #f14602;
   border-radius: 10px;
 }
 
 
 .statusbar {
-  border-bottom: 1px solid #7102f186;
+  border-bottom: 1px solid #f14602;
   position: fixed;
   top: 0px;
   width: 100vw;
@@ -74,7 +74,7 @@ nav img {
 .statusbar h1 {
   font-size: x-large;
   padding: 10px;
-  color: #ba7dff;
+  color: #f14602;
 }
 
 .slideimg {
