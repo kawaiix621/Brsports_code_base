@@ -406,7 +406,7 @@ tbody tr:hover {
   border-radius:100px;
   padding: 10px;
 }
-.dashboard buttonx {
+.dashboard .buttonx {
   opacity: 0.25;
 }
 
