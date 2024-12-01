@@ -162,7 +162,8 @@ button {
 }
 
 .highlight-row {
-  background-color: #6709ff85;
+  background-color: #f14602;
+  color: white;
   /* Light blue background for the user1 row */
 }
 
@@ -301,20 +302,6 @@ button {
   .search-input:focus {
     outline: none; /* Remove default outline */
 }
-.searchbtn{
-  background-color: rgb(45, 34, 65);
-  color: #fff;
-  width: auto;
-  height: auto;
-  font-size: smaller;
-  margin: 5px;
-}
-/* Ensure activeX class has high specificity */
-.searchbtn.activeX {
-  opacity: 1 !important;
-  background-color: #7102f1 !important;
-}
-
 
 
 
@@ -381,9 +368,9 @@ table {
 }
 th, td {
   padding: 10px;
-  text-align: center;
+  text-align: left;
   font-size: small;
-  border: 1px solid #00000000;
+  border: 1px solid #000000a8;
 }
 th {
   background-color: #00000073; /* Header background color */
@@ -391,7 +378,9 @@ th {
 
 }
 tbody tr:hover {
-  background-color: #6709ff85; /* Highlight row on hover */
+  background-color: #000000; /* Highlight row on hover */
+  color:white;
+  font-size: xx-large;
 }
 
 
@@ -465,7 +454,7 @@ tbody tr:hover {
 }
 
 .pop-left {
-  background-color: #00000098;
+  background-color: #ff000098;
   box-shadow: 10px 10px #000;
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -502,32 +491,6 @@ tbody tr:hover {
 .pop {
   position: relative;
   top: 0px;
-}
-
-.pop-left {
-  background-color: #00000098;
-  box-shadow: 10px 10px #000;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  width: 65vw;
-  position: relative;
-  right: 5vw;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 20px;
-}
-
-.pop-right {
-  background-color: #ffffff;
-  box-shadow: 10px 10px #000;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  width: 65vw;
-  position: relative;
-  left: 13vw;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 20px;
 }
 
 .signin-container h3 {
@@ -570,14 +533,13 @@ tbody tr:hover {
 }
 
 .pop-left2 {
-  background-color: #000000a2;
-  color: #ffffff;
-  padding: 10px;
+  color: #f14602;
+  padding:0px;
   max-width:40vw;
   height: min-content;
   position: relative;
   right: 5vw;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   margin: 15px;
   margin-top: 0px;
@@ -586,10 +548,11 @@ tbody tr:hover {
 
 .pop-right2 {
   color: rgb(0, 0, 0);
-  background-color: #00000036;
+  background-color: #00000013;
   padding: 10px;
   font-size: 18px;
   margin: 0px;
   margin-bottom: 30px;
-  border-radius: 0px;
+  border-radius: 10px;
+  max-width:70vw;
 }

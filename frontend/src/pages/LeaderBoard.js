@@ -119,7 +119,7 @@ const LeaderBoard = () => {
             opacity: viewMode === "user-focused" ? 1 : 0.25
           }}
         >
-          My Rank
+          My_Rank
         </button>
       </div>
       {viewMode === "normal" ? (
