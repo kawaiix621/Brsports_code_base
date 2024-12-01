@@ -1,6 +1,6 @@
 // src/components/Splash.js
 import React from 'react';
-import './Splash.css'; // Optional CSS
+
 
 const Splash = () => (
   <div className="splash-screen">

@@ -1,7 +1,7 @@
 // MatchCard.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import "./MatchCard.css";
+
 
 // Helper function to calculate time difference
 const getTimeDifference = (timestamp) => {

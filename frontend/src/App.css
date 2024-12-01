@@ -71,6 +71,7 @@ nav img {
   font-size: x-large;
   opacity: 100%;
   background-color: #c4c4c4;
+  border: 3px solid #000;
   border-radius: 15px;
 }
 
@@ -112,6 +113,9 @@ display: block; }
 .matches{
 display: flex;
 flex-wrap: wrap;
+justify-items: center;
+justify-content: center;
+width: 100%;
 }
 
 /* Media query for smaller screens (mobile) */
@@ -158,4 +162,232 @@ button {
 .highlight-row {
   background-color: #6709ff85;
   /* Light blue background for the user1 row */
+}
+
+
+
+/* Match card*/
+.matchcard {
+  transform: scale(0.98);
+    background-color: #ebebeb;
+    border-radius: 15px;
+   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column;
+    width:calc(100vw /5.3);
+    height:auto;
+    border: 3px solid #ffffff6e;
+  }
+
+
+    /* Media query for smaller screens (mobile) */
+  @media (max-width: 768px) {
+      .matchcard {
+        width:85vw;
+        height:auto
+  }
+    }
+  
+  
+  .matchcard p{
+    margin: 0;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.479);
+  }
+
+  .matchcard img {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .matchcard h2 {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    font-size: 19px;
+    font-weight:500;
+  }
+  
+  .match-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin:0;
+  }
+  
+  .matchcard:hover {
+    transform: scale(1.02);
+    background-color: #ffffff;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.363);
+  }
+  
+  .matchcard:active {
+    transform: scale(0.98);
+  }
+  
+  .matchcard .status{
+    position:relative;
+    top:-50px;
+    width: fit-content;
+    padding: 3px 6px;
+    border-radius: 5px;
+    background-color: #f1460291;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .matchcard .prize{
+    font-size: medium;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+
+
+
+
+
+  
+  /*Search filter */
+.searchdiv{
+  width:100%;
+  position:fixed;
+  top:0px;
+  z-index: 999;
+  right: 0px;
+}
+/* Media query for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .searchdiv {
+    width: 100%;
+    position:fixed;
+    top:100px;
+}
+}
+  .searchfilter input {
+    border: none;
+    padding: 10px;
+    background-color: #ffffff; /* Dark background */
+    color: #000000; /* White text */
+    font-size: 16px;
+    transition: border 0.3s ease;
+    z-index: 999;
+    margin: 10px;
+    width:calc(25vw - 40px);
+    height:30px;
+    border-radius: 10px;
+    position: fixed;
+    right: 0px;
+    border: 3px solid #000000;
+  }
+  @media (max-width: 768px) {
+  .searchfilter input  {
+    width:calc(100% - 40px);
+  }
+  }
+  .search-input::placeholder {
+    color: #888888; /* Lighter placeholder text */
+  }
+  .search-input:focus {
+    outline: none; /* Remove default outline */
+}
+.searchbtn{
+  background-color: rgb(45, 34, 65);
+  color: #fff;
+  width: auto;
+  height: auto;
+  font-size: smaller;
+  margin: 5px;
+}
+/* Ensure activeX class has high specificity */
+.searchbtn.activeX {
+  opacity: 1 !important;
+  background-color: #7102f1 !important;
+}
+
+
+
+
+
+
+
+
+
+/* Splash */
+.splash-screen {
+  overflow-y: none;
+  overflow-x: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f14602;
+  color: #ffffff;
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+/* Splash.css */
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.splash-screen img {
+  animation: dropDown 2.5s ease-out;
+  opacity: 0; /* Start hidden */
+  animation-fill-mode: forwards; /* Retain final state after animation */
+  width: 150px;
+  height: auto;
+ }
+
+
+
+
+
+
+
+
+
+ /* Match History */
+.match-history {
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin:5vw;
+  width:90vw;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  font-size: small;
+  border: 1px solid #00000000;
+}
+th {
+  background-color: #00000073; /* Header background color */
+  color: rgb(255, 255, 255);
+
+}
+tbody tr:hover {
+  background-color: #6709ff85; /* Highlight row on hover */
 }
