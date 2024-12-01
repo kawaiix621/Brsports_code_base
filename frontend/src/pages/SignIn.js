@@ -53,14 +53,15 @@ const SignIn = () => {
   fontSize:"60px",
   margin:"0px",
   fontWeight:"normal",
-  fontFamily:"Bagel"
+  fontFamily:"Bagel",
+  color:"black"
 }}>
 BRsports
 </h1>
 <p style={{
   fontSize:"20px",
   margin:"4px",
-color:"black"
+color:"grey"
 }}>We don't match couples we match rivals</p>
 
 

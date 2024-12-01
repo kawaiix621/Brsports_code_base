@@ -53,13 +53,9 @@ function MainContent() {
         
     
           <Route element={<ProtectedRoute />}>
-       
-           
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admin/create-match" element={<CreateMatch />} />
           <Route path="/admin/create-leaderboard" element={<CreateLeaderBoard />} />
-       
-        
         </Route>
       </Routes>
     </>
