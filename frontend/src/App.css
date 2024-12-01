@@ -391,3 +391,19 @@ th {
 tbody tr:hover {
   background-color: #6709ff85; /* Highlight row on hover */
 }
+
+
+
+/*dashboard*/
+.dashboard{
+  text-align: center;
+}
+.dashboard img{
+  width: 30vw;
+  height: 30vw;
+  margin: 10px;
+   border-radius: 50px;
+  padding: 10px;
+}
+
+

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { db, ref, get } from "../firebase";
 import { getAuth, signOut } from "firebase/auth";
 import MatchHistory from "../components/MatchHistory";
-import "./Dashboard.css";
+
+
 const CACHE_KEY = "cachedUserData";
 const Dashboard = () => {
   const [user, setUser] = useState(null);
@@ -80,9 +81,9 @@ const Dashboard = () => {
           return <p>Unable to display match history.</p>;
         }
       })()}
-      <h3 className="logout" onClick={handleSignOut}>
+      <button type="button" onClick={handleSignOut}>
         Log out
-      </h3>
+      </button>
     </div>
   );
 };
