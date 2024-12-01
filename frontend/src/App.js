@@ -15,12 +15,10 @@ import './App.css';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => setShowSplash(false), 5000);
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
-
   return (
     <Router>
       {showSplash ? (
@@ -31,16 +29,10 @@ function App() {
     </Router>
   );
 }
-
 function MainContent() {
   const location = useLocation();
-
-  // List of routes where the Navbar should be hidden
   const hideNavbarRoutes = ["/signin", "/admin/create-match", "/admin/create-leaderboard"];
-
-  // Hide Navbar if the current route matches any of the routes in hideNavbarRoutes
   const hideNavbar = hideNavbarRoutes.includes(location.pathname);
-
   return (
     <>
       {!hideNavbar && <Navbar />}
@@ -50,8 +42,6 @@ function MainContent() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/leaderboard" element={<LeaderBoard />} />
           <Route path="/matches/:id" element={<MatchDetails />} />
-        
-    
           <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admin/create-match" element={<CreateMatch />} />
