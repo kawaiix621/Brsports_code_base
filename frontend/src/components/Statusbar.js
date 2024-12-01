@@ -17,7 +17,7 @@ const Statusbar = () => (
    <h2 style={{
     opacity:"0.5",
     fontWeight:"normal",
-  fontFamily:"Bagel"}}>. sports</h2>
+  fontFamily:"Bagel"}}>sports</h2>
    </div>
 
  <></>
