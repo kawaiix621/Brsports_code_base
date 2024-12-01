@@ -90,7 +90,7 @@ const MatchDetails = () => {
           Results
         </button>
         <button onClick={handleRegister} style={{ marginRight: "10px" }}>
-          Join Match
+          Register
         </button>
       </div>
       <div style={{
