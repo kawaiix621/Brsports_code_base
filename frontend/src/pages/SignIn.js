@@ -67,10 +67,14 @@ color:"black"
 
 
 <div className="signin">
-        <button type="button" onClick={() => handleSignIn(signInWithGoogle)}>
+        <button style={{
+          opacity:"1"
+        }} type="button" onClick={() => handleSignIn(signInWithGoogle)}>
         Signup
         </button>
-        <button type="button" onClick={() => handleSignIn(signInWithTwitter)}>
+        <button  style={{
+          opacity:"1"
+        }} type="button" onClick={() => handleSignIn(signInWithTwitter)}>
         Login
         </button>
       </div>
