@@ -81,9 +81,20 @@ const Dashboard = () => {
           return <p>Unable to display match history.</p>;
         }
       })()}
-      <button type="button" onClick={handleSignOut}>
-        Log out
-      </button>
+      
+
+
+        
+      <img
+      style={{
+        position:"fixed",
+        top:"35px",
+        right:"10px"
+      }}
+      src="logout.svg" onClick={handleSignOut}/>
+       
+
+
     </div>
   );
 };
