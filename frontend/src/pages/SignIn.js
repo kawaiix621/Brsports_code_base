@@ -59,7 +59,8 @@ BRsports
 </h1>
 <p style={{
   fontSize:"20px",
-  margin:"4px"
+  margin:"4px",
+color:"black"
 }}>We don't match couples we match rivals</p>
 
 
