@@ -18,7 +18,7 @@ const SearchFilter = ({ onSearch }) => {
           type="text"
           value={query}
           onChange={handleChange}
-          placeholder="What do you want to play?"
+          placeholder="Search games"
         />
       </div>
 
