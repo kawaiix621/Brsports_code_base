@@ -14,21 +14,22 @@
 }
 
 .pop-left2 {
-  background-color: #00000036;
-  color: #c18aff;
+  background-color: #000000a2;
+  color: #ffffff;
   padding: 10px;
-  width: 35vw;
+  max-width:40vw;
   height: min-content;
   position: relative;
   right: 5vw;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   margin: 15px;
   margin-top: 0px;
+  border-radius: 10px;
 }
 
 .pop-right2 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   background-color: #00000036;
   padding: 10px;
   font-size: 18px;

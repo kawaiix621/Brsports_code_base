@@ -50,10 +50,16 @@ function MainContent() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/leaderboard" element={<LeaderBoard />} />
           <Route path="/matches/:id" element={<MatchDetails />} />
-          <Route element={<ProtectedRoute />}>
+        
+        
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admin/create-match" element={<CreateMatch />} />
           <Route path="/admin/create-leaderboard" element={<CreateLeaderBoard />} />
+       
+        
+          <Route element={<ProtectedRoute />}>
+       
+       
         </Route>
       </Routes>
     </>
