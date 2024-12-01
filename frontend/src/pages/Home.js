@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getMatches } from "../api";
 import MatchCard from "../components/MatchCard";
 import SearchFilter from "../components/SearchFilter"; // Import the filter
-import "./Home.css"
+
+
 const CACHE_KEY = "cachedMatches"; // Key for localStorage
 const Home = () => {
   const [matches, setMatches] = useState([]);

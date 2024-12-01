@@ -1,6 +1,6 @@
 .matchcard {
   transform: scale(0.98);
-    background-color: #0000005b;
+    background-color: #ebebeb;
     border-radius: 15px;
    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     overflow: hidden;
@@ -11,6 +11,7 @@
     flex-direction: column;
     width: 21vw;
     height:21vw;
+    border: 3px solid #ffffff6e;
   }
 
 
@@ -26,7 +27,7 @@
   .matchcard p{
     margin: 0;
     margin-top: 10px;
-    color: rgba(255, 255, 255, 0.479);
+    color: rgba(0, 0, 0, 0.479);
   }
 
   .matchcard img {
@@ -38,7 +39,7 @@
   
   .matchcard h2 {
     margin: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin-top: 5px;
     font-size: 24px;
     font-weight:500;
@@ -53,8 +54,8 @@
   
   .matchcard:hover {
     transform: scale(1.02);
-    background-color: #000000;
-    box-shadow: 0 50px 100px rgb(0, 0, 0);
+    background-color: #ffffff;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.363);
   }
   
   .matchcard:active {
@@ -68,12 +69,12 @@
     padding: 3px 6px;
     border-radius: 5px;
     background-color: #f1460291;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 10px;
     margin-bottom: 0px;
     margin-top: 0px;
   }
   .matchcard .prize{
     font-size: medium;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
