@@ -66,8 +66,8 @@ const Dashboard = () => {
         }}
         ><strong>Wallet Balance:</strong> {user.wins || "57k"}</p>
       </div>
-      <button>Fund wallet</button>
-      <button>Cash out</button>
+      <button className="buttonx">Deposit</button>
+      <button className="buttonx">Withdraw</button>
       {/* Render MatchHistory and log match history */}
       {(() => {
         try {

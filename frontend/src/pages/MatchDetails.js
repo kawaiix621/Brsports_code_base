@@ -86,11 +86,11 @@ const MatchDetails = () => {
       />
       <h1>{match.title}</h1>
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <button onClick={handleRegister} style={{ marginRight: "10px" }}>
-          Register
-        </button>
         <button onClick={handleViewLeaderboard}>
-          Leaderboard
+          Results
+        </button>
+        <button onClick={handleRegister} style={{ marginRight: "10px" }}>
+          Join Match
         </button>
       </div>
       <div style={{
