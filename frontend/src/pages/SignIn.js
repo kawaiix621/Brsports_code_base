@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { signInWithGoogle, signInWithTwitter, db, ref, get, set } from "../firebase"; 
-import "./SignIn.css";
+
 
 const SignIn = () => {
   const navigate = useNavigate();

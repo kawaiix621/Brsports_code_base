@@ -25,6 +25,7 @@ button {
   width: 120px;
   height: auto;
   font-size: large;
+  border: 3px solid #000;
 }
 
 
@@ -407,3 +408,142 @@ tbody tr:hover {
 }
 
 
+
+/*signin*/
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0px;
+  min-height: 100vh;
+  background-color: #ffffff
+}
+
+
+.logout {
+  position: absolute;
+  bottom: 100px;
+  width: 100vw;
+  text-align: center;
+  background-color: #1916227a;
+  backdrop-filter: blur(2px);
+  /* Apply blur effect */
+}
+
+.header {
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 100vw;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.games-list {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.pop {
+  position: relative;
+  top: 0px;
+}
+
+.pop-left {
+  background-color: #00000098;
+  box-shadow: 10px 10px #000;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 65vw;
+  position: relative;
+  right: 5vw;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.pop-right {
+  background-color: #ffffff;
+  box-shadow: 10px 10px #000;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  width: 65vw;
+  position: relative;
+  left: 13vw;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.signin-container h3 {
+  color: #fff;
+  font-size: x-large;
+  margin: 20px;
+  width: 50vw;
+  position: relative;
+  right: 20vw;
+}
+
+.pop {
+  position: relative;
+  top: 0px;
+}
+
+.pop-left {
+  background-color: #00000098;
+  box-shadow: 10px 10px #000;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 65vw;
+  position: relative;
+  right: 5vw;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.pop-right {
+  background-color: #ffffff;
+  box-shadow: 10px 10px #000;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  width: 65vw;
+  position: relative;
+  left: 13vw;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.signin-container h3 {
+  color: #fff;
+  font-size: x-large;
+  margin: 20px;
+  width: 50vw;
+  position: relative;
+  right: 20vw;
+}
+
+.signin {
+  position: fixed;
+  bottom: 50px;
+}
+
+.signin button{
+  border: 3px solid #000;
+}
