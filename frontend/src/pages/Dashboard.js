@@ -85,11 +85,11 @@ const Dashboard = () => {
       <img
       style={{
         position:"fixed",
-        top:"10px",
-        right:"10px",
+        top:"0px",
+        right:"0px",
         zIndex:"999",
-        width:"25px",
-        height:"25px"
+        width:"30px",
+        height:"30px"
       }}
       src="logout.svg" onClick={handleSignOut}/>
        
