@@ -47,12 +47,39 @@ const SignIn = () => {
   };
 
   return (
-    <div className="signin-container">
-      <div className="pop">
-        <div style={{ height: '70px' }}></div>
-        {/* Content as before */}
-      </div>
-      <div className="signin">
+<div className="signin-container">
+<div className="pop">
+  <div style={{ height: '70px' }}></div>
+  <p className="pop-right">BRsports</p>
+  <p className="games-list">
+    BRsports is a gaming platform for mobile battle royale games, 
+    helping hobbyist gamers become professional eSports players. 
+    Players can compete daily, sharpen their skills, and earn real 
+    cash prizes in a collaborative community environment.
+  </p>
+
+  <p className="pop-left">Daily Competitions</p>
+  <p className="games-list">
+    Participate in daily matches with cash prizes to stay motivated and 
+    improve. Pay only ₦1,000 monthly, and winners receive ₦3,000 daily payouts. 
+    Connect games like CODM, Warzone Mobile, Fortnite, and Bloodstrike 
+    for easy integration.
+  </p>
+
+  <p className="pop-right">Community & Skill Development</p>
+  <p className="games-list">
+    Engage with other players in social spaces, chat rooms, and leaderboards. 
+    Form teams, exchange strategies, and level up to professional-level competitions.
+  </p>
+
+  <p className="pop-left">Pathway to eSports Sponsorships</p>
+  <p className="games-list">
+    Build your professional portfolio through tracked stats and consistent wins. 
+    Get noticed by sponsors, professional teams, or brands looking for endorsements.
+  </p>
+</div>
+
+<div className="signin">
         <button type="button" onClick={() => handleSignIn(signInWithGoogle)}>
           Login with Google :)
         </button>
@@ -60,8 +87,8 @@ const SignIn = () => {
           Login with Twitter :)
         </button>
       </div>
-      <div style={{ height: '400px' }}></div>
-    </div>
+<div style={{ height: '400px' }}></div>
+</div>
   );
 };
 
