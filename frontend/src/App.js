@@ -48,16 +48,12 @@ function MainContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route element={<ProtectedRoute />}>
         <Route path="/leaderboard" element={<LeaderBoard />} />
           <Route path="/matches/:id" element={<MatchDetails />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admin/create-match" element={<CreateMatch />} />
           <Route path="/admin/create-leaderboard" element={<CreateLeaderBoard />} />
-
-
-        <Route element={<ProtectedRoute />}>
-
-
         </Route>
       </Routes>
     </>
