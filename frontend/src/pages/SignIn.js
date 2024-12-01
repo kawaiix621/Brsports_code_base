@@ -50,7 +50,7 @@ const SignIn = () => {
 <div className="signin-container">
 <div style={{ height: '100px' }}></div>
 <h1 style={{
-  fontSize:"80px",
+  fontSize:"60px",
   margin:"0px",
   fontWeight:"normal",
   fontFamily:"Bagel"
@@ -59,7 +59,8 @@ BRsports
 </h1>
 <p style={{
   fontSize:"20px",
-  margin:"4px"
+  margin:"4px",
+color:"black"
 }}>We don't match couples we match rivals</p>
 
 
