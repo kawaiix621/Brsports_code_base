@@ -89,7 +89,8 @@ const Dashboard = () => {
       style={{
         position:"fixed",
         top:"35px",
-        right:"10px"
+        right:"10px",
+        zIndex:"999"
       }}
       src="logout.svg" onClick={handleSignOut}/>
        
