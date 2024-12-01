@@ -14,7 +14,10 @@ const Statusbar = () => (
     marginRight:'0px'
    }}
    src="logo.png"></img>
-   <h2>sports</h2>
+   <h2 style={{
+    opacity:"0.5",
+    fontWeight:"normal",
+  fontFamily:"Bagel"}}>sports</h2>
    </div>
 
  <></>

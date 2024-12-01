@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Bagel'; /* Choose a name; 'calibre' might clash */
+  src: url('../public/Bagel.ttf') format('truetype'); /* Path relative to your index.html */
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -113,10 +119,12 @@ button {
   border-radius: 10px;
   border: none;
   margin: 10px;
-  border-radius: 100px;
-  padding: 10px 20px;
+  border-radius: 20px;
+  padding: 15px 10px;
   background-color: #ffffff;
-  width: 40vw;
-  height: 60px;
+  color: #000000;
+  font-weight: bold;
+  width: 120px;
+  height: auto;
   font-size: large;
 }
