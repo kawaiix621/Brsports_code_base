@@ -9,9 +9,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #191622;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
+p{
+  color: #000000;
+}
 
 nav ul {
   width: 100vw;
@@ -60,7 +63,7 @@ nav img {
 
 
 .statusbar {
-  border-bottom: 1px solid #f14602;
+  border-bottom: 1px solid #ffffff71;
   position: fixed;
   top: 0px;
   width: 100vw;
@@ -68,10 +71,9 @@ nav img {
   justify-content: space-between;
   color: #ffffff;
   height: 70px;
-  background-color: #1916227a;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
   /* Apply blur effect */
-  -webkit-backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(6px);
   /* For Safari support */
   z-index: 100;
   /* Ensure it stays above other elements */

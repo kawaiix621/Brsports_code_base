@@ -58,13 +58,9 @@ const SignIn = () => {
 BRsports
 </h1>
 <p style={{
-  color:"rgba(250,250,250,0.7)",
   fontSize:"20px",
   margin:"4px"
 }}>We don't match couples we match rivals</p>
-
-
-
 
 
 
