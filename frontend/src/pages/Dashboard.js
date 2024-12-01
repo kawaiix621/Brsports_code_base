@@ -66,13 +66,8 @@ const Dashboard = () => {
         }}
         ><strong>Wallet Balance:</strong> {user.wins || "57k"}</p>
       </div>
-      <button style={{
-        opacity:"0.25"
-      }}>Deposit</button>
-      
-      <button style={{
-        opacity:"0.25"
-      }}>Withdraw</button>
+      <button>Deposit</button>
+      <button>Withdraw</button>
       {/* Render MatchHistory and log match history */}
       {(() => {
         try {
