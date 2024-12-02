@@ -2,14 +2,6 @@ import React, { useEffect, useState } from "react";
 import { getMatches } from "../api";
 import MatchCard from "../components/MatchCard";
 import SearchFilter from "../components/SearchFilter"; // Import the filter
-import Ads from "../components/Ads"; // Import ads
-
-const adsData = [
-  { img: 'ad1.jpg', redirectUrl: 'https://www.example.com/page1' },
-  { img: 'ad2.jpg', redirectUrl: 'https://www.example.com/page2' },
-  { img: 'ad3.jpg', redirectUrl: 'https://www.example.com/page3' },
-  { img: 'ad4.jpg' , redirectUrl: 'https://www.example.com/page4' },
-];
 
 
 
@@ -50,7 +42,6 @@ const Home = () => {
       <div style={{ height: "70px" }}></div>
 
 
-      <Ads adsData={adsData} />
 
 <div className="maindiv">
 

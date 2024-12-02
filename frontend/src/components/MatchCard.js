@@ -1,6 +1,14 @@
 // MatchCard.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import Ads from "../components/Ads"; // Import ads
+
+const adsData = [
+  { img: 'ad1.jpg', redirectUrl: 'https://www.example.com/page1' },
+  { img: 'ad2.jpg', redirectUrl: 'https://www.example.com/page2' },
+  { img: 'ad3.jpg', redirectUrl: 'https://www.example.com/page3' },
+  { img: 'ad4.jpg' , redirectUrl: 'https://www.example.com/page4' },
+];
 
 
 // Helper function to calculate time difference
@@ -18,25 +26,27 @@ const getTimeDifference = (timestamp) => {
   }
 };
 
+
 const MatchCard = ({ match }) => {
   return (
-    <Link 
-      to={`/matches/${match.id}`} 
-      state={{ match }} 
-      style={{ textDecoration: 'none', color: 'inherit' }}
-    >
-      <div className="matchcard">
-      
-       <div>
-       <img src={match.img || "bg.jpg"} alt={`${match.title} background`} />
-        <p className="status">{getTimeDifference(match.timestamp)}</p>
+    <div>
+      <Link
+        to={`/matches/${match.id}`}
+        state={{ match }}
+        style={{ textDecoration: 'none', color: 'inherit' }}
+      >
+        <div className="matchcard"> {/* This div is always rendered */}
+          <div>
+            <img src={match.img || "bg.jpg"} alt={`${match.title} background`} />
+            <p className="status">{getTimeDifference(match.timestamp)}</p>
+          </div>
+          <h2>{match.title}</h2>
+          <p className="prize">{match.fullDetail.prizePool}</p>
+          <p>{match.details}</p>
         </div>
-        
-        <h2>{match.title}</h2>
-        <p className="prize">{match.fullDetail.prizePool}</p>
-       <p>{match.details}</p>
-        </div>
-    </Link>
+        {match.id === "match10" && <Ads adsData={adsData} />} {/* Conditional rendering of Ads */}
+      </Link>
+    </div>
   );
 };
 
