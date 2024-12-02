@@ -28,7 +28,9 @@ button {
   border: 3px solid #000;
   opacity: 0.25;
 }
-
+.ads{
+  width: 100%;
+}
 
 /*bottom navigation bar */
 nav ul {
@@ -238,10 +240,10 @@ button {
     position:relative;
     top:-50px;
     width: fit-content;
-    padding: 3px 6px;
+    padding: 6px 12px;
     border-radius: 5px;
-    background-color: #f1460291;
-    color: rgb(0, 0, 0);
+    background-color: #6200ff;
+    color: rgb(255, 255, 255);
     margin: 10px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -540,7 +542,7 @@ tbody tr:hover {
 }
 
 .pop-left2 {
-  color: #f14602;
+  color: #6200ff;
   padding:0px;
   max-width:40vw;
   height: min-content;

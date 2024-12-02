@@ -40,6 +40,8 @@ const Home = () => {
     <div>
       <div style={{ height: "70px" }}></div>
 
+
+<img className="ads" src="ads.png"></img>
 <div className="maindiv">
 
       {/* Search Filter */}
