@@ -39,7 +39,6 @@ nav ul {
   justify-content: space-around;
   list-style: none;
   background-color: #ffffff;
-  border-top: 1px solid #f14602;
   padding: 10px;
   margin: 0px;
   height: 60px;
@@ -87,10 +86,11 @@ nav img {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  color: #ffffff;
+  color: #ff0000;
   height: 70px;
   background-color: #000000;
   z-index: 100;
+
   /* Ensure it stays above other elements */
 }
 
@@ -241,7 +241,7 @@ button {
     width: fit-content;
     padding: 6px 12px;
     border-radius: 5px;
-    background-color: #6200ff;
+    background-color: #c70808;
     color: rgb(255, 255, 255);
     margin: 10px;
     margin-bottom: 0px;
@@ -541,7 +541,7 @@ tbody tr:hover {
 }
 
 .pop-left2 {
-  color: #6200ff;
+  color: #c70808;
   padding:0px;
   max-width:40vw;
   height: min-content;
