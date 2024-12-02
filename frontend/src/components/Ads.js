@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Ads = ({ adsData }) => {
     const settings = {
-        dots: false, // Remove dots if you don't need them
+        dots: true, // Remove dots if you don't need them
         infinite: true,
         speed: 500,
         slidesToShow: 1,

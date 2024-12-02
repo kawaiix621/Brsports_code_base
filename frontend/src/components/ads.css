@@ -3,11 +3,15 @@
     height: 100vw; 
     overflow: hidden; /* Keep this to hide overflow from Slick */
   }
+  .mama{
+    height: 100vw;
+  }
   
+
   /* Slick slider styles - these might need adjustments depending on react-slick version */
   .slick-slider { /* Adjust as needed for your slick setup */
     width: 100%; /* Or a specific width */
-    height: 300px; /* Set a fixed height for consistent image display */
+    height: 100vw; /* Set a fixed height for consistent image display */
   }
   
   .slick-slide img { /* Style images within slick slider */
