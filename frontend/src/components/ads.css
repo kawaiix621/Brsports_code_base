@@ -1,6 +1,6 @@
 .ads-component {
     width: 100%; /* Adjust as needed, consider using vw/vh for responsiveness */
-    /* height: 100vw;  Remove this - Slick handles height */
+    height: 100vw; 
     overflow: hidden; /* Keep this to hide overflow from Slick */
   }
   
@@ -12,7 +12,7 @@
   
   .slick-slide img { /* Style images within slick slider */
     width: 100%;
-    height: 100%;
+    height: 100vw;
     object-fit: cover; /* Ensures images fill the container without distortion */
     display: block;
   }
