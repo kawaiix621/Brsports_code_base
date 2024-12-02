@@ -1,0 +1,42 @@
+.ads-component {
+    display: flex;
+    flex-direction: column; /* Stack ads and pagination */
+    width: 100%; /* Adjust as needed */
+  }
+  
+  .ads-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .ads-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .ad-image {
+    width: 100%; /* Adjust image width */
+    height: auto;
+    display: inline-block; /* Keep images in a row */
+    margin: 0px; /* Add spacing between images */
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center; /* Center pagination */
+    margin-top: 10px;
+  }
+  
+  .pagination-item {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 50px;
+    
+  }
+  
+  .pagination-item.active {
+    background-color: #000000; /* Example active color */
+    color: white;
+  }
