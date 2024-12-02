@@ -30,22 +30,38 @@ const getTimeDifference = (timestamp) => {
 const MatchCard = ({ match }) => {
   return (
     <div>
-      <Link
-        to={`/matches/${match.id}`}
-        state={{ match }}
-        style={{ textDecoration: 'none', color: 'inherit' }}
-      >
-        <div className="matchcard"> {/* This div is always rendered */}
+      <div> {/* Wrap the Link and Ads separately */}
+        <Link to={`/matches/${match.id}`} state={{ match }} style={{ textDecoration: 'none', color: 'inherit' }}>
           <div>
-            <img src={match.img || "bg.jpg"} alt={`${match.title} background`} />
-            <p className="status">{getTimeDifference(match.timestamp)}</p>
-          </div>
-          <h2>{match.title}</h2>
-          <p className="prize">{match.fullDetail.prizePool}</p>
-          <p>{match.details}</p>
+            {
+
+  <Link 
+      to={`/matches/${match.id}`} 
+      state={{ match }} 
+      style={{ textDecoration: 'none', color: 'inherit' }}
+    >
+      <div className="matchcard">
+      
+       <div>
+       <img src={match.img || "bg.jpg"} alt={`${match.title} background`} />
+        <p className="status">{getTimeDifference(match.timestamp)}</p>
         </div>
-        {match.id === "match10" && <Ads adsData={adsData} />} {/* Conditional rendering of Ads */}
-      </Link>
+        
+        <h2>{match.title}</h2>
+        <p className="prize">{match.fullDetail.prizePool}</p>
+       <p>{match.details}</p>
+        </div>
+    </Link>
+
+            }
+          </div>
+        </Link>
+        {match.id === "match10" && (
+          <div> {/* added a wrapper div for the Ads*/}
+          <Ads adsData={adsData} />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
