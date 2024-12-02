@@ -1,49 +1,35 @@
 .ads-component {
-    display: flex;
-    flex-direction: column; /* Stack ads and pagination */
-    width: 100%; /* Adjust as needed */
-    height: 100vw;
+    width: 100%; /* Adjust as needed, consider using vw/vh for responsiveness */
+    /* height: 100vw;  Remove this - Slick handles height */
+    overflow: hidden; /* Keep this to hide overflow from Slick */
   }
   
-  .ads-container {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent line breaks */
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+  /* Slick slider styles - these might need adjustments depending on react-slick version */
+  .slick-slider { /* Adjust as needed for your slick setup */
+    width: 100%; /* Or a specific width */
+    height: 300px; /* Set a fixed height for consistent image display */
   }
   
-  .ads-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+  .slick-slide img { /* Style images within slick slider */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the container without distortion */
+    display: block;
   }
   
-  .ad-image {
-    height: 100vw;
-    width: auto; /* Adjust image width */
-    display: inline-block; /* Keep images in a row */
-    margin: 0px; /* Add spacing between images */
+  .slick-dots { /* Style the pagination dots if you want them */
+      bottom: -30px; /* Adjust positioning as needed */
   }
   
-  .pagination {
-    display: flex;
-    justify-content: center; /* Center pagination */
-    margin-top: 10px;
-    position:relative;
-    top: -50px;
-    z-index: 999;
+  .slick-dots li button:before { /* Customize the dots' appearance */
+    color: white;
+    opacity: 0.5; /* Adjust opacity */
   }
   
-  .pagination-item {
-    width: 4px;
-    height: 4px;
-    padding: 5px;
-    cursor: pointer;
-    margin: 0 5px;
-    border-radius: 50px;
-    color: rgba(255, 255, 255, 0);
-    border: 2px solid #ffffff ;
+  .slick-dots li.slick-active button:before {
+    opacity: 1; /* Make active dot more visible */
   }
   
-  .pagination-item.active {
-    background-color: #ffffff; /* Example active color */
-    color: rgba(0, 0, 0, 0);
-  }
+  
+  /* Remove unnecessary pagination styles since react-slick provides its own. */
+  /* .pagination, .pagination-item, .pagination-item.active { ... }  These are removed*/
