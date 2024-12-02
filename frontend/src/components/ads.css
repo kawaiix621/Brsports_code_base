@@ -24,17 +24,14 @@
   }
   
   .pagination {
+    margin: 0px;
     display: flex;
     justify-content: center; /* Center pagination */
-    margin-top: 10px;
     width: 100%;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 20px;
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
     padding-left: 0px;
     padding-right:0px;
-    position:relative;
-    top:-80px;
   }
   
   .pagination-item {
@@ -45,13 +42,13 @@
     margin: 0 5px;
     border-radius: 50px;
     color: rgba(255, 255, 255, 0);
-    border: 2px solid #ffffff ;
+    border: 2px solid #000000 ;
     opacity: 0.5;
   }
   
   .pagination-item.active {
     opacity: 1;
     width: 16px;
-    background-color: #ffffff; /* Example active color */
+    background-color: #000000; /* Example active color */
     color: rgba(0, 0, 0, 0);
   }
