@@ -1,7 +1,7 @@
 .ads-component {
     display: flex;
     flex-direction: column; /* Stack ads and pagination */
-    width: 100vw; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
     height:auto;
     background-color: #000000;
   }
@@ -20,7 +20,7 @@
   
   .ad-image {
     height: 100vw;
-    width: auto; /* Adjust image width */
+    width: 100%; /* Adjust image width */
     display: inline-block; /* Keep images in a row */
     margin: 0px; /* Add spacing between images */
  }
