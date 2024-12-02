@@ -1,25 +1,21 @@
 .ads-component {
-    width: 100%; /* Adjust as needed, consider using vw/vh for responsiveness */
-    height: 100vw; 
-    overflow: hidden; /* Keep this to hide overflow from Slick */
-  }
-  .mama{
-    height: 100vw;
-  }
-  
-
-  /* Slick slider styles - these might need adjustments depending on react-slick version */
-  .slick-slider { /* Adjust as needed for your slick setup */
-    width: 100%; /* Or a specific width */
-    height: 100vw; /* Set a fixed height for consistent image display */
-  }
-  
-  .slick-slide img { /* Style images within slick slider */
     width: 100%;
-    height: 100vw;
-    object-fit: cover; /* Ensures images fill the container without distortion */
-    display: block;
+    height: 100vw; /* This is what you want */
+    overflow: hidden; /* Essential to prevent overflow */
   }
+  
+  .slick-slider { 
+    width: 100%;
+    height: 100%; /* Slider fills the container */
+  }
+  
+  .slick-slide img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crucial for image scaling */
+  }
+  
+  /* ...rest of your Slick styles... */
   
   .slick-dots { /* Style the pagination dots if you want them */
       bottom: -30px; /* Adjust positioning as needed */
