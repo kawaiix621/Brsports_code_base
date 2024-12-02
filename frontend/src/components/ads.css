@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column; /* Stack ads and pagination */
     width: 100vw; /* Adjust as needed */
-    height: 100vw;
-    background-color: #202020;
+    height:auto;
+    background-color: #000000;
   }
   
   .ads-container {
@@ -11,6 +11,7 @@
     white-space: nowrap; /* Prevent line breaks */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth scrolling */
   }
   
   .ads-container::-webkit-scrollbar {
@@ -22,14 +23,14 @@
     width: auto; /* Adjust image width */
     display: inline-block; /* Keep images in a row */
     margin: 0px; /* Add spacing between images */
-  }
+ }
   
   .pagination {
     margin: 0px;
     display: flex;
     justify-content: center; /* Center pagination */
     width: 100%;
-    background-color: rgb(223, 223, 223);
+    background-color: rgba(223, 223, 223, 0);
     padding: 10px;
     padding-left: 0px;
     padding-right:0px;
@@ -43,8 +44,9 @@
     margin: 0 5px;
     border-radius: 50px;
     color: rgba(255, 255, 255, 0);
-    border: 2px solid #000000 ;
+    border: 2px solid #ffffff ;
     opacity: 0.5;
+    transition: width 0.3s ease, opacity 0.3s ease, background-color 0.3s ease; /* Add transition for pagination dots */
   }
   
   .pagination-item.active {
