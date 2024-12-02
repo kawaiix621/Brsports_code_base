@@ -5,10 +5,10 @@ import SearchFilter from "../components/SearchFilter"; // Import the filter
 import Ads from "../components/Ads"; // Import ads
 
 const adsData = [
-  { img: 'ad4.jpg', redirectUrl: 'https://www.example.com/page1' },
-  { img: 'ad3.jpg', redirectUrl: 'https://www.example.com/page2' },
-  { img: 'ad4.jpg', redirectUrl: 'https://www.example.com/page3' },
-  { img: 'ad3.jpg' , redirectUrl: 'https://www.example.com/page4' },
+  { img: 'ad1.jpg', redirectUrl: 'https://www.example.com/page1' },
+  { img: 'ad2.jpg', redirectUrl: 'https://www.example.com/page2' },
+  { img: 'ad3.jpg', redirectUrl: 'https://www.example.com/page3' },
+  { img: 'ad4.jpg' , redirectUrl: 'https://www.example.com/page4' },
 ];
 
 

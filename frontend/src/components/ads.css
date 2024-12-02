@@ -1,35 +1,52 @@
 .ads-component {
-    width: 100%;
-    height: 100vw; /* This is what you want */
-    overflow: hidden; /* Essential to prevent overflow */
+    display: flex;
+    flex-direction: column; /* Stack ads and pagination */
+    width: 100%; /* Adjust as needed */
+    height: 100vw;
   }
   
-  .slick-slider { 
-    width: 100%;
-    height: 100%; /* Slider fills the container */
+  .ads-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
   
-  .slick-slide img { 
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Crucial for image scaling */
+  .ads-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
   
-  /* ...rest of your Slick styles... */
-  
-  .slick-dots { /* Style the pagination dots if you want them */
-      bottom: -30px; /* Adjust positioning as needed */
+  .ad-image {
+    height: 100vw;
+    width: auto; /* Adjust image width */
+    display: inline-block; /* Keep images in a row */
+    margin: 0px; /* Add spacing between images */
   }
   
-  .slick-dots li button:before { /* Customize the dots' appearance */
-    color: white;
-    opacity: 0.5; /* Adjust opacity */
+  .pagination {
+    display: flex;
+    justify-content: center; /* Center pagination */
+    margin-top: 10px;
+    position:relative;
+    top: -50px;
+    z-index: 999;
   }
   
-  .slick-dots li.slick-active button:before {
-    opacity: 1; /* Make active dot more visible */
+  .pagination-item {
+    width: 3px;
+    height: 3px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0);
+    border: 2px solid #ffffff ;
+    opacity: 0.5;
   }
   
-  
-  /* Remove unnecessary pagination styles since react-slick provides its own. */
-  /* .pagination, .pagination-item, .pagination-item.active { ... }  These are removed*/
+  .pagination-item.active {
+    opacity: 1;
+    width: 16px;
+    background-color: #ffffff; /* Example active color */
+    color: rgba(0, 0, 0, 0);
+  }
