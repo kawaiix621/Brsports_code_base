@@ -1,8 +1,9 @@
 .ads-component {
     display: flex;
     flex-direction: column; /* Stack ads and pagination */
-    width: 100%; /* Adjust as needed */
-    height: 100%;
+    width: 100vw; /* Adjust as needed */
+    height: 100vw;
+    background-color: #202020;
   }
   
   .ads-container {
