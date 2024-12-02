@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column; /* Stack ads and pagination */
     width: 100%; /* Adjust as needed */
+    height: 100vw;
   }
   
   .ads-container {
@@ -16,8 +17,8 @@
   }
   
   .ad-image {
-    width: 100%; /* Adjust image width */
-    height: auto;
+    height: 100vw;
+    width: auto; /* Adjust image width */
     display: inline-block; /* Keep images in a row */
     margin: 0px; /* Add spacing between images */
   }
@@ -26,17 +27,23 @@
     display: flex;
     justify-content: center; /* Center pagination */
     margin-top: 10px;
+    position:relative;
+    top: -50px;
+    z-index: 999;
   }
   
   .pagination-item {
-    padding: 5px 10px;
+    width: 6px;
+    height: 6px;
+    padding: 5px;
     cursor: pointer;
     margin: 0 5px;
     border-radius: 50px;
-    
+    color: rgba(255, 255, 255, 0);
+    border: 2px solid #ffffff ;
   }
   
   .pagination-item.active {
-    background-color: #000000; /* Example active color */
-    color: white;
+    background-color: #ffffff; /* Example active color */
+    color: rgba(0, 0, 0, 0);
   }

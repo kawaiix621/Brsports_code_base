@@ -8,7 +8,7 @@ const adsData = [
   { img: 'ad1.jpg', redirectUrl: 'https://www.example.com/page1' },
   { img: 'ad2.jpg', redirectUrl: 'https://www.example.com/page2' },
   { img: 'ad3.jpg', redirectUrl: 'https://www.example.com/page3' },
-  { img: 'ad4.png' , redirectUrl: 'https://www.example.com/page4' },
+  { img: 'ad4.jpg' , redirectUrl: 'https://www.example.com/page4' },
 ];
 
 
