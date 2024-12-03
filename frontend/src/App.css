@@ -540,10 +540,12 @@ tbody tr:hover {
     margin: 20px;
     text-align: justify;
     line-height: 1.6;
+  color: grey;
 }
 
 .about h2{
   width: 50vw;
+  color: #353535;
 }
 
 
