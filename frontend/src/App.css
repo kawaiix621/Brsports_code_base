@@ -505,7 +505,7 @@ tbody tr:hover {
 
 
 .signin button{
-  border: 3px solid hsla(0, 0%, 0%, 0);
+  border: 3px solid hsl(0, 0%, 0%);
   background-color: #8c00ff;
   padding: 11px;
   color: #fff;
