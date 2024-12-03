@@ -53,7 +53,9 @@ const SignIn = () => {
 
 <div className="header"> {/*Use className for styling*/}
         <h1 className="title">Welcome to BRsports</h1>
-        <p className="subtitle">The most acessible Esport Platform</p>
+        <p className="subtitle">Play daily, win big. 
+          Join BRsports, the mobile battle 
+          royale platform where skill pays off.</p>
       </div>
 
 
@@ -66,41 +68,41 @@ src="banner.png">
 </img>
 
       <div className="about"> {/*Section for About Us*/}
-        <h2>A new way to Play Your Games</h2>
+        <h2>Dominate the Battle Royale & Earn Big.</h2>
         <p>
-        Esports.gg was launched by a diverse group of esports
-         industry veterans to finally give esports, competitive 
-         gaming and streaming the dedicated home it deserves. With 
-         contributions from peak-of-form professional athletes, singular 
-         </p> {/* Your about us text here */}
+        Tired of free-to-play frustration? At BRsports, you get to compete daily in high-stakes matches. For a monthly fee of just  ₦1000, you'll receive: 
+        
+        <p>
+          One Daily Match: Test your skills against top players. </p>
+          <p>
 
-        <h2>A fair Ranking System</h2>
-        <p>Esports.gg is a destination connecting 
-          esports fans to their passions. We create 
-          news and analysis for all gamers, esports 
-</p> {/*Your Mission text */}
+          Massive Winnings: Win $3000 per victory!
+          </p>
+          <p>
+Fair Ranking System: Climb the leaderboard and prove your dominance.
+          </p>
+        </p> {/* Your about us text here */}
 
-
-<h2>Understand BRsports</h2>
-        <p> 
-          Monad Labs is building the next-generation b
-          lockchain infrastructure for Monad,
-           a 100% EVM-compatible layer 1 blockchain boasting
-            10,000 transactions per second, 1-second block times, 
-            single-slot finality, and low-hardware requirements.
-</p> {/*Your Mission text */}
-</div>
-<div className="signin">
+       <div className="signin">
+       <h2>Sign up now and start your winning streak! </h2>
         <button style={{
           opacity:"1"
         }} type="button" onClick={() => handleSignIn(signInWithGoogle)}>
-        Gammer's Portal
+        Gamer's Portal
         </button>
       {/*  <button  style={{
           opacity:"1"
         }} type="button" onClick={() => handleSignIn(signInWithTwitter)}>
         Login with X
         </button> */}
+</div>
+
+<h2>Escape the Grind:  BRsports</h2>
+<p>
+  No more feeling like a loser after hours of gaming. BRsports provides a structured environment for competitive play with guaranteed opportunities to earn.  We offer daily matches and substantial winnings, ensuring that your time and effort translate into real rewards.  It's time to make your passion pay off.
+</p>
+
+
 </div>
 
 {/*Your Mission text */}

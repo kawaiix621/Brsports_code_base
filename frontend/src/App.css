@@ -513,7 +513,8 @@ tbody tr:hover {
   padding: 11px;
   color: #fff;
   width: 80vw;
-  height: 60px;
+  height: 55px;
+  border-radius: 100px;
 }
 .signin-container img{ 
   border-radius: 100px;
@@ -540,6 +541,7 @@ tbody tr:hover {
 .about {
   color: rgb(36, 36, 36);
   font-size: large;
+  margin: 10px;
 }
 
 .about h2{
@@ -550,6 +552,14 @@ tbody tr:hover {
   width: 80vw;
   color: #000000;
   text-decoration: underline #8c00ff;
+  margin-top: 40px;
+}
+
+.signin h2{
+  font-size:20px;
+  color: #b962ff;
+  text-decoration: none;
+  text-align: center;
 }
 
 
