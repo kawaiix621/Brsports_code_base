@@ -3,8 +3,6 @@ const cors = require("cors");
 const authRoutes = require("./routes/auth");
 const matchRoutes = require("./routes/matches");
 const leaderboardRoutes = require("./routes/leaderboard");
-const MatchMakingRoutes = require("./routes/matchmaking");
-
 
 const app = express();
 const PORT = process.env.PORT || 5000;

@@ -64,7 +64,7 @@ const SignIn = () => {
   height:"auto",
   borderRadius:"0px"
 }}
-src="banner.gif">
+src="banner.png">
 </img>
 
       <div className="about"> {/*Section for About Us*/}
