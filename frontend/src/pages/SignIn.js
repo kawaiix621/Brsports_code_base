@@ -101,6 +101,22 @@ Climb the leaderboard and prove your dominance.
         </button> */}
 </div>
 
+
+
+<div style={{
+  display:"flex",
+  flexWrap:"wrap",
+  justifyContent:"center"
+}}>
+<img className="gamesimg" src="pubg.png"></img>
+<img className="gamesimg" src="freefire.png"></img>
+<img className="gamesimg" src="bloodstrike.png"></img>
+<img className="gamesimg" src="farlight.png"></img>
+<img className="gamesimg" src="codm.png"></img>
+
+</div>
+
+
 <h2>Escape the Grind:  BRsports</h2>
 <p>
   No more feeling like a loser after hours of gaming. BRsports provides a structured environment for competitive play with guaranteed opportunities to earn.  We offer daily matches and substantial winnings, ensuring that your time and effort translate into real rewards.  It's time to make your passion pay off.
