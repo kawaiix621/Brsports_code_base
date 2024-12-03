@@ -50,18 +50,20 @@ const SignIn = () => {
 <div className="signin-container">
 <div style={{ height: '70px' }}></div>
 
-<img style={{
+
+<div className="header"> {/*Use className for styling*/}
+        <h1 className="title">Welcome to BRsports</h1>
+        <p className="subtitle">The most acessible Esport Platform</p>
+      </div>
+
+
+      <img style={{
   width:"100vw",
   height:"auto",
   borderRadius:"0px"
 }}
 src="banner.png">
 </img>
-
-<div className="header"> {/*Use className for styling*/}
-        <h1 className="title">Welcome to BRsports</h1>
-        <p className="subtitle">The most acessible Esport Platform</p>
-      </div>
 
       <div className="about"> {/*Section for About Us*/}
         <h2>A new way to Play Your Games</h2>

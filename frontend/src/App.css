@@ -512,7 +512,8 @@ tbody tr:hover {
   background-color: #8c00ff;
   padding: 11px;
   color: #fff;
-  width: 200px;
+  width: 80vw;
+  height: 60px;
 }
 .signin-container img{ 
   border-radius: 100px;
