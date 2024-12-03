@@ -73,13 +73,15 @@ src="banner.png">
         Tired of free-to-play frustration? At BRsports, you get to compete daily in high-stakes matches. For a monthly fee of just  ₦1000, you'll receive: 
         
         <p>
-          One Daily Match: Test your skills against top players. </p>
+          <h4>One Daily Match:</h4> Test your skills against top players. </p>
           <p>
 
-          Massive Winnings: Win $3000 per victory!
+          <h4> Massive Winnings: </h4>Win $3000 per victory! and Bigger Prize
+           on sponsored matches
           </p>
           <p>
-Fair Ranking System: Climb the leaderboard and prove your dominance.
+          <h4>Fair Ranking System: </h4>
+Climb the leaderboard and prove your dominance.
           </p>
         </p> {/* Your about us text here */}
 

@@ -554,6 +554,11 @@ tbody tr:hover {
   text-decoration: underline #8c00ff;
   margin-top: 40px;
 }
+.about h4{
+  font-weight: bold;
+  color: #6200ff;
+  margin: 0px;
+}
 
 .signin h2{
   font-size:20px;
