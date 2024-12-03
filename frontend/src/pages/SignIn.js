@@ -64,7 +64,7 @@ const SignIn = () => {
   height:"auto",
   borderRadius:"0px"
 }}
-src="banner.png">
+src="banner.gif">
 </img>
 
       <div className="about"> {/*Section for About Us*/}
@@ -82,7 +82,7 @@ src="banner.png">
           </p>
           <p>
           <h4>Staking on live matches: </h4>
-You get to place a bet on yourself, your friend in real time
+place a wager on yourself, your friend or favourite player in real time
 during matches for higher returns </p>
         </p> {/* Your about us text here */}
 
