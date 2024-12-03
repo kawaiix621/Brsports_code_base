@@ -503,8 +503,6 @@ tbody tr:hover {
   right: 20vw;
 }
 
-.signin {
-}
 
 .signin button{
   border: 3px solid hsla(0, 0%, 0%, 0);
@@ -551,7 +549,7 @@ tbody tr:hover {
 }
 .about h4{
   font-weight: bold;
-  color: #6200ff;
+  color: #00000059;
   margin: 0px;
 }
 

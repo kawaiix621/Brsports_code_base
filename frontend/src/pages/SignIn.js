@@ -76,7 +76,10 @@ src="banner.png">
           <h4>One Daily Match:</h4> Test your skills against top players. </p>
           <p>
 
-          <h4> Massive Winnings: </h4>Win $3000 per victory! and Bigger Prize
+          <h4 style={{
+            textAlign:"right",
+          }}> Massive Winnings: 
+          </h4>Win $3000 per victory! and Bigger Prize
            on sponsored matches
           </p>
           <p>
@@ -87,7 +90,12 @@ Climb the leaderboard and prove your dominance.
 
        <div className="signin">
        
-       <h4>Login now and continue your winning streak! </h4>
+       <h4
+       style={{
+        color:"rgba(0,0,0,0.7)",
+        textAlign:"center",
+        marginTop:"50px"
+       }}>Login now and continue your winning streak! </h4>
         
         <button style={{
           opacity:"1"
@@ -106,7 +114,9 @@ Climb the leaderboard and prove your dominance.
 <div style={{
   display:"flex",
   flexWrap:"wrap",
-  justifyContent:"center"
+  justifyContent:"center",
+  marginTop:"30px",
+  marginBottom:"30px"
 }}>
 <img className="gamesimg" src="pubg.png"></img>
 <img className="gamesimg" src="freefire.png"></img>
