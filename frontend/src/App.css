@@ -526,7 +526,7 @@ tbody tr:hover {
   margin: 0;
   font-weight: normal;
   font-family: "Bagel"; /* Ensure the font is loaded correctly */
-  color: #8c00ff;
+  color: #000000;
 }
 
 
@@ -537,15 +537,18 @@ tbody tr:hover {
 }
 
 .about {
-    margin: 20px;
-    text-align: justify;
-    line-height: 1.6;
-  color: grey;
+  color: rgb(36, 36, 36);
+  font-size: large;
 }
 
 .about h2{
-  width: 50vw;
-  color: #353535;
+  font-size:30px;
+  margin: 0;
+  font-weight: normal;
+  font-family: "Bagel"; /* Ensure the font is loaded correctly */
+  width: 80vw;
+  color: #000000;
+  text-decoration: underline #f827ff;
 }
 
 
