@@ -505,18 +505,61 @@ tbody tr:hover {
 }
 
 .signin {
-  position: fixed;
-  bottom: 50px;
 }
 
 .signin button{
-  border: 3px solid #000;
+  border: 3px solid hsla(0, 0%, 0%, 0);
+  background-color: #8c00ff;
+  padding: 11px;
+  color: #fff;
+  width: 200px;
 }
 .signin-container img{ 
   border-radius: 100px;
   width: 100px;
   height: 100px;
 }
+
+
+.title {
+  font-size:33px;
+  margin: 0;
+  font-weight: normal;
+  font-family: "Bagel"; /* Ensure the font is loaded correctly */
+  color: #8c00ff;
+}
+
+
+.subtitle {
+  font-size: 20px;
+  margin: 4px 0;
+  color: grey;
+}
+
+.about {
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about h2{
+  width: 50vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
