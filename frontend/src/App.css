@@ -86,9 +86,9 @@ nav img {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  color: #ff0000;
+  color: #ffffff;
   height: 70px;
-  background-color: #000000;
+  background-color: #8c00ff;
   z-index: 100;
 
   /* Ensure it stays above other elements */
@@ -163,7 +163,7 @@ button {
 }
 
 .highlight-row {
-  background-color: #f14602;
+  background-color: #8c00ff;
   color: white;
   /* Light blue background for the user1 row */
 }
@@ -241,7 +241,7 @@ button {
     width: fit-content;
     padding: 6px 12px;
     border-radius: 5px;
-    background-color: #c70808;
+    background-color: #8c00ff;
     color: rgb(255, 255, 255);
     margin: 10px;
     margin-bottom: 0px;
@@ -320,7 +320,7 @@ button {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #000000;
+  background-color: #8c00ff;
   color: #ffffff;
   margin: 0px;
 }
@@ -456,7 +456,7 @@ tbody tr:hover {
 }
 
 .pop-left {
-  background-color: #ff000098;
+  background-color: #8c00ff;
   box-shadow: 10px 10px #000;
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -541,7 +541,7 @@ tbody tr:hover {
 }
 
 .pop-left2 {
-  color: #c70808;
+  color: #8c00ff;
   padding:0px;
   max-width:40vw;
   height: min-content;

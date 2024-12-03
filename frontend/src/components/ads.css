@@ -3,7 +3,7 @@
     flex-direction: column; /* Stack ads and pagination */
     width: 100%; /* Adjust as needed */
     height:auto;
-    background-color: #000000;
+    background-color: #8c00ff;
   }
   
   .ads-container {
@@ -18,8 +18,8 @@
     display: none; /* Chrome, Safari, Opera */
   }
   
-  .ad-image {
-    height: 100vw;
+  .ad-div {
+    height:100vw;
     width: 100%; /* Adjust image width */
     display: inline-block; /* Keep images in a row */
     margin: 0px; /* Add spacing between images */
@@ -52,6 +52,6 @@
   .pagination-item.active {
     opacity: 1;
     width: 16px;
-    background-color: #000000; /* Example active color */
+    background-color: #ffffff48; /* Example active color */
     color: rgba(0, 0, 0, 0);
   }

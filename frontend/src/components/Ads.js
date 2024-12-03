@@ -48,7 +48,8 @@ const Ads = ({ adsData }) => {
       <div className="ads-container" ref={containerRef}>
         {adsData.slice(startIndex, endIndex).map((ad) => (
           <a key={ad.img} href={ad.redirectUrl} target="_blank" rel="noopener noreferrer">
-            <img src={ad.img} alt={`Ad ${ad.img}`} className="ad-image" />
+          
+            <img src={ad.img} alt={`Ad ${ad.img}`} className="ad-div" />
           </a>
         ))}
       </div>
