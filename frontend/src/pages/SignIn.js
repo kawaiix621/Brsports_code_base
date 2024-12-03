@@ -86,7 +86,9 @@ Climb the leaderboard and prove your dominance.
         </p> {/* Your about us text here */}
 
        <div className="signin">
-       <h2>Sign up now and start your winning streak! </h2>
+       
+       <h4>Login now and continue your winning streak! </h4>
+        
         <button style={{
           opacity:"1"
         }} type="button" onClick={() => handleSignIn(signInWithGoogle)}>
