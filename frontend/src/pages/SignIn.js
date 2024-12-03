@@ -113,13 +113,17 @@ Climb the leaderboard and prove your dominance.
 
 <div style={{ height: '100px', display:'flex'
 }}>
-<img style={{
+    <a href="your_x_page_url" target="_blank" rel="noopener noreferrer">
+    <img style={{
   width:"40px",
   height:"40px",
   opacity:"0.5",
   margin:"5px",
   marginRight:"10px"
 }} src="x.png"></img>
+    </a>
+
+    <a href="your_youtube_page_url" target="_blank" rel="noopener noreferrer">  
 <img style={{
   width:"50px",
   height:"50px",
@@ -128,6 +132,7 @@ Climb the leaderboard and prove your dominance.
   marginLeft:"5px"
 }} 
 src="youtube.png"></img>
+</a>
 
 </div>
 </div>
