@@ -100,7 +100,7 @@ Climb the leaderboard and prove your dominance.
         <button style={{
           opacity:"1"
         }} type="button" onClick={() => handleSignIn(signInWithGoogle)}>
-        Join Waitlist
+       Gamer's portal
         </button>
       {/*  <button  style={{
           opacity:"1"
