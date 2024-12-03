@@ -18,6 +18,8 @@ const getLeaderboardById = async (req, res) => {
   }
 };
 
+
+
 // Get all leaderboards for a specific match
 const getLeaderboardsByMatchId = async (req, res) => {
   const { matchId } = req.query;  // Extract matchId from query parameters

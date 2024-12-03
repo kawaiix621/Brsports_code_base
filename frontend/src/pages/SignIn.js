@@ -76,16 +76,14 @@ src="banner.png">
           <h4>One Daily Match:</h4> Test your skills against top players. </p>
           <p>
 
-          <h4 style={{
-            textAlign:"right",
-          }}> Massive Winnings: 
-          </h4>Win $3000 per victory! and Bigger Prize
+          <h4> Massive Winnings: 
+          </h4>Win ₦3000 per victory! and Bigger Prize
            on sponsored matches
           </p>
           <p>
-          <h4>Fair Ranking System: </h4>
-Climb the leaderboard and prove your dominance.
-          </p>
+          <h4>Staking on live matches: </h4>
+You get to place a bet on yourself, your friend in real time
+during matches for higher returns </p>
         </p> {/* Your about us text here */}
 
        <div className="signin">

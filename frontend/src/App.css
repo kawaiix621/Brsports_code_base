@@ -544,12 +544,12 @@ tbody tr:hover {
   font-family: "Bagel"; /* Ensure the font is loaded correctly */
   width: 80vw;
   color: #000000;
-  text-decoration: underline #8c00ff;
+  text-decoration: underline #ffd000;
   margin-top: 40px;
 }
 .about h4{
   font-weight: bold;
-  color: #00000059;
+  color: #ea00ff;
   margin: 0px;
 }
 
