@@ -564,9 +564,8 @@ tbody tr:hover {
 .gamesimg{
   border-radius: 0px;
   width:20vw;
-  height: auto;
+  height: min-content;
   margin: 10px;
-
 }
 
 

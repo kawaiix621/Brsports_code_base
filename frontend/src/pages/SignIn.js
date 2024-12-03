@@ -100,7 +100,7 @@ Climb the leaderboard and prove your dominance.
         <button style={{
           opacity:"1"
         }} type="button" onClick={() => handleSignIn(signInWithGoogle)}>
-        Gamer's Portal
+        Join Waitlist
         </button>
       {/*  <button  style={{
           opacity:"1"
@@ -118,11 +118,11 @@ Climb the leaderboard and prove your dominance.
   marginTop:"30px",
   marginBottom:"30px"
 }}>
-<img className="gamesimg" src="pubg.png"></img>
-<img className="gamesimg" src="freefire.png"></img>
-<img className="gamesimg" src="bloodstrike.png"></img>
-<img className="gamesimg" src="farlight.png"></img>
 <img className="gamesimg" src="codm.png"></img>
+<img className="gamesimg" src="freefire.png"></img>
+<img className="gamesimg" src="pubg.png"></img>
+<img className="gamesimg" src="farlight.png"></img>
+<img className="gamesimg" src="bloodstrike.png"></img>
 
 </div>
 
