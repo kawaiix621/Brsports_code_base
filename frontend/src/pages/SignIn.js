@@ -53,13 +53,7 @@ const SignIn = () => {
     <div className="signin-container">
       <div style={{ height: '70px' }}></div>
 
-      <img style={{
-        width: "100vw",
-        height: "auto",
-        borderRadius: "0px"
-      }}
-        src="banner.jpg">
-      </img>
+
 
       <div className="header"> {/*Use className for styling*/}
         <h1 className="title">Welcome to BRsports</h1>
@@ -67,31 +61,31 @@ const SignIn = () => {
       </div>
 
 
-     
+      <img style={{
+        width: "100vw",
+        height: "auto",
+        borderRadius: "0px"
+      }}
+        src="banner.png">
+      </img>
+
 
       <div className="about"> {/*Section for About Us*/}
 
 
         <h2>Dominate the Battle Royale & Earn Big.</h2>
         <p>
-At BRsports, you get to compete daily in high-stakes matches. For a monthly fee of just  ₦1000, you'll receive:
+          At BRsports, you get to compete daily in high-stakes matches. For a monthly fee of just  ₦1000, you'll receive:
         </p> {/* Your about us text here */}
 
         <div>
           <p>
-            <img style={{
-              width: "100%",
-              height: "auto",
-              borderRadius: "20px"
-            }}
-              src="ban2.png">
-            </img>
-            ₦3000 per victory! and Bigger Prize Like 
-            new smart phones,Cash prizes, Airdrops 
+            ₦3000 per victory! and Bigger Prize Like
+            new smart phones,Cash prizes, Airdrops
             and Crypto Currencies
             on sponsored matches
           </p>
-         {/*<p>
+          {/*<p>
 
             <img style={{
               width: "100%",
@@ -102,7 +96,7 @@ At BRsports, you get to compete daily in high-stakes matches. For a monthly fee 
             </img>
             place a wager on yourself, your friend or favourite player in real time
             during matches for higher returns
-          </p>*/} 
+          </p>*/}
         </div>
 
         <div className="signin">
@@ -112,17 +106,17 @@ At BRsports, you get to compete daily in high-stakes matches. For a monthly fee 
               color: "rgba(0,0,0,0.35)",
               textAlign: "center",
               marginTop: "50px"
-            }}>Pre-register now and continue your winning streak! </h4>
-          
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScpw6rdcFnrBUeMXs5_7st_LNQpDWBKU6r1vv35odmMPU_mgg/viewform" target="_blank" rel="noopener noreferrer">
-          <button style={{
-            opacity: "1"
-          }} type="button" >
-            Join the Pre-match
-          </button>
+            }}>Register now and continue your winning streak! </h4>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScpw6rdcFnrBUeMXs5_7st_LNQpDWBKU6r1vv35odmMPU_mgg/viewform" target="_blank" rel="noopener noreferrer">
+            <button style={{
+              opacity: "1"
+            }} type="button" >
+              Register
+            </button>
           </a>
 
-{/*
+          {/*
           <button style={{
             opacity: "1"
           }} type="button" onClick={() => handleSignIn(signInWithGoogle)}>
@@ -136,11 +130,11 @@ At BRsports, you get to compete daily in high-stakes matches. For a monthly fee 
         </div>
 
         <h4
-            style={{
-              color: "rgba(0,0,0,0.35)",
-              textAlign: "center",
-              marginTop: "50px"
-            }}>Supported games</h4>
+          style={{
+            color: "rgba(0,0,0,0.35)",
+            textAlign: "center",
+            marginTop: "50px"
+          }}>Supported games</h4>
 
 
         <div style={{
@@ -159,23 +153,37 @@ At BRsports, you get to compete daily in high-stakes matches. For a monthly fee 
         </div>
 
 
+
         <h2>Escape the Grind:  BRsports</h2>
         <p>
           No more feeling like a loser after hours of gaming. BRsports provides a structured environment for competitive play with guaranteed opportunities to earn.  We offer daily matches and substantial winnings, ensuring that your time and effort translate into real rewards.  It's time to make your passion pay off.
         </p>
       </div>
       {/*Your Mission text */}
-
       <div style={{
-        height: '100px', display: 'flex'
+        backgroundColor: "rgba(0,0,0,0.05)",
+        position: "relative",
+        bottom: "-25px",
+        zIndex: "999",
+        height: "100px",
+        width: "100%",
+        height: 'auto',
+        display: 'flex',
+        justifyContent: "center",
+        padding: "25px",
+        paddingRight:"0px",
+        paddingLeft:"0px",
+        margin:"0px"
       }}>
+
+
         <a href="https://x.com/brsports_xyz" target="_blank" rel="noopener noreferrer">
           <img style={{
             width: "40px",
             height: "40px",
             opacity: "0.5",
             margin: "5px",
-            marginRight: "10px"
+            marginRight: "15px"
           }} src="x.png"></img>
         </a>
 
@@ -185,11 +193,14 @@ At BRsports, you get to compete daily in high-stakes matches. For a monthly fee 
             height: "50px",
             opacity: "0.5",
             margin: "0px",
-            marginLeft: "5px"
+            marginLeft: "10px"
           }}
             src="youtube.png"></img>
         </a>
+
+
       </div>
+
     </div>
   );
 };
