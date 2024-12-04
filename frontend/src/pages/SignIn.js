@@ -74,11 +74,7 @@ const SignIn = () => {
 
 
         <h2>Dominate the Battle Royale & Earn Big.</h2>
-        <p>
-          Unlock Your Winning Potential with BRsports!
-Step into the world of competitive gaming where every match is a chance to win big. For just ₦1000/month, you gain exclusive access to:
-
-        </p> {/* Your about us text here */}
+       {/* Your about us text here */}
 
         <div>
       
@@ -88,20 +84,6 @@ Step into the world of competitive gaming where every match is a chance to win b
 <p>
   <span style={{ fontWeight: "bold" }}>Exclusive Sponsored Matches</span> – Win exciting prizes like new smartphones, cash rewards, airtime airdrops, and even cryptocurrencies!
 </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
    {/*<p>
