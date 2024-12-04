@@ -6,6 +6,9 @@ import { signInWithGoogle, signInWithTwitter, db, ref, get, set } from "../fireb
 const SignIn = () => {
   const navigate = useNavigate();
 
+
+
+
   const handleSignIn = async (signInMethod) => {
     try {
       const userCredential = await signInMethod();
@@ -68,24 +71,38 @@ const SignIn = () => {
       </img>
 
       <div className="about"> {/*Section for About Us*/}
+
+
         <h2>Dominate the Battle Royale & Earn Big.</h2>
         <p>
           Tired of free-to-play frustration? At BRsports, you get to compete daily in high-stakes matches. For a monthly fee of just  ₦1000, you'll receive:
-          <div>
-            <p>
-              <h4>One Daily Match:</h4> Test your skills against top players. </p>
-            <p>
-              <h4> Massive Winnings:
-              </h4>Win ₦3000 per victory! and Bigger Prize
-              on sponsored matches
-            </p>
-          </div>
+        </p> {/* Your about us text here */}
+
+        <div>
           <p>
-            <h4>Staking on live matches: </h4>
+            <img style={{
+              width: "100%",
+              height: "auto",
+              borderRadius: "20px"
+            }}
+              src="ban2.png">
+            </img>
+            Win ₦3000 per victory! and Bigger Prize
+            on sponsored matches
+          </p>
+         {/*<p>
+
+            <img style={{
+              width: "100%",
+              height: "auto",
+              borderRadius: "20px"
+            }}
+              src="ban3.png">
+            </img>
             place a wager on yourself, your friend or favourite player in real time
             during matches for higher returns
-          </p>
-        </p> {/* Your about us text here */}
+          </p>*/} 
+        </div>
 
         <div className="signin">
 
@@ -94,13 +111,22 @@ const SignIn = () => {
               color: "rgba(0,0,0,0.7)",
               textAlign: "center",
               marginTop: "50px"
-            }}>Login now and continue your winning streak! </h4>
+            }}>Pre-register now and continue your winning streak! </h4>
+          
+  <a href="Google form url" target="_blank" rel="noopener noreferrer">
+          <button style={{
+            opacity: "1"
+          }} type="button" >
+            Join the wait-list
+          </button>
+          </a>
 
+{/*
           <button style={{
             opacity: "1"
           }} type="button" onClick={() => handleSignIn(signInWithGoogle)}>
             Gamer's portal
-          </button>
+          </button> */ }
           {/*  <button  style={{
           opacity:"1"
         }} type="button" onClick={() => handleSignIn(signInWithTwitter)}>

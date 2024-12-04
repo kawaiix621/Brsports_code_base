@@ -12,8 +12,8 @@ const SearchFilter = ({ onSearch }) => {
   };
 
   return (
-    <div  className="searchdiv">
-      <div className="searchfilter">
+<div  className="searchdiv">
+     <div className="searchfilter">
         <input 
           type="text"
           value={query}

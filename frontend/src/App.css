@@ -503,7 +503,9 @@ tbody tr:hover {
   right: 20vw;
 }
 
-
+.signin{
+  text-align: center;
+}
 .signin button{
   border: 3px solid hsl(0, 0%, 0%);
   background-color: #8c00ff;
