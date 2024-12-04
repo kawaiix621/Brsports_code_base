@@ -53,13 +53,6 @@ const SignIn = () => {
     <div className="signin-container">
       <div style={{ height: '70px' }}></div>
 
-
-      <div className="header"> {/*Use className for styling*/}
-        <h1 className="title">Welcome to BRsports</h1>
-        <p className="subtitle">Play Battle royals to earn </p>
-      </div>
-
-
       <img style={{
         width: "100vw",
         height: "auto",
@@ -67,6 +60,14 @@ const SignIn = () => {
       }}
         src="banner.jpg">
       </img>
+
+      <div className="header"> {/*Use className for styling*/}
+        <h1 className="title">Welcome to BRsports</h1>
+        <p className="subtitle">Play Battle royals to earn </p>
+      </div>
+
+
+     
 
       <div className="about"> {/*Section for About Us*/}
 
