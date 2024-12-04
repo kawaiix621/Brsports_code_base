@@ -65,7 +65,7 @@ const SignIn = () => {
         height: "auto",
         borderRadius: "0px"
       }}
-        src="banner.png">
+        src="banner.jpg">
       </img>
 
       <div className="about"> {/*Section for About Us*/}
