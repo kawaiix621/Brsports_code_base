@@ -113,7 +113,7 @@ const SignIn = () => {
               marginTop: "50px"
             }}>Pre-register now and continue your winning streak! </h4>
           
-  <a href="Google form url" target="_blank" rel="noopener noreferrer">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScpw6rdcFnrBUeMXs5_7st_LNQpDWBKU6r1vv35odmMPU_mgg/viewform" target="_blank" rel="noopener noreferrer">
           <button style={{
             opacity: "1"
           }} type="button" >
