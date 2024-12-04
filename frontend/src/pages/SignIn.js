@@ -161,7 +161,6 @@ const SignIn = () => {
       </div>
       {/*Your Mission text */}
       <div style={{
-        backgroundColor: "rgba(0,0,0,0.05)",
         position: "relative",
         bottom: "-25px",
         zIndex: "999",
