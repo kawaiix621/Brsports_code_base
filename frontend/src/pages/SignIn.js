@@ -75,17 +75,38 @@ const SignIn = () => {
 
         <h2>Dominate the Battle Royale & Earn Big.</h2>
         <p>
-          At BRsports, you get to compete daily in high-stakes matches. For a monthly fee of just  ₦1000, you'll receive:
+          Unlock Your Winning Potential with BRsports!
+Step into the world of competitive gaming where every match is a chance to win big. For just ₦1000/month, you gain exclusive access to:
+
         </p> {/* Your about us text here */}
 
         <div>
           <p>
-            ₦3000 per victory! and Bigger Prize Like
-            new smart phones,Cash prizes, Airdrops
-            and Crypto Currencies
-            on sponsored matches
-          </p>
-          {/*<p>
+  <span style={{fontWeight:"bold"}}>₦3000 for Every Victory</span>
+ – Test your skills and reap instant rewards.
+</p>
+       
+<p>
+<span style={{fontWeight:"bold"}}>Exclusive Sponsored Matches</span>
+ – Win exciting prizes like new smartphones, cash rewards, airtime airdrops, and even cryptocurrencies!
+<\p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   {/*<p>
 
             <img style={{
               width: "100%",
@@ -97,6 +118,8 @@ const SignIn = () => {
             place a wager on yourself, your friend or favourite player in real time
             during matches for higher returns
           </p>*/}
+
+
         </div>
 
         <div className="signin">
@@ -106,7 +129,9 @@ const SignIn = () => {
               color: "rgba(0,0,0,0.35)",
               textAlign: "center",
               marginTop: "50px"
-            }}>Register now and continue your winning streak! </h4>
+            }}>
+Why just play for fun when you can play for rewards? Join thousands of gamers turning their passion into profit. Start winning today!
+ </h4>
 
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScpw6rdcFnrBUeMXs5_7st_LNQpDWBKU6r1vv35odmMPU_mgg/viewform" target="_blank" rel="noopener noreferrer">
             <button style={{
