@@ -81,15 +81,13 @@ Step into the world of competitive gaming where every match is a chance to win b
         </p> {/* Your about us text here */}
 
         <div>
-          <p>
-  <span style={{fontWeight:"bold"}}>₦3000 for Every Victory</span>
- – Test your skills and reap instant rewards.
+      
+   <p>
+  <span style={{ fontWeight: "bold" }}>₦3000 for Every Victory</span> – Test your skills and reap instant rewards.
 </p>
-       
 <p>
-<span style={{fontWeight:"bold"}}>Exclusive Sponsored Matches</span>
- – Win exciting prizes like new smartphones, cash rewards, airtime airdrops, and even cryptocurrencies!
-<\p>
+  <span style={{ fontWeight: "bold" }}>Exclusive Sponsored Matches</span> – Win exciting prizes like new smartphones, cash rewards, airtime airdrops, and even cryptocurrencies!
+</p>
 
 
 
