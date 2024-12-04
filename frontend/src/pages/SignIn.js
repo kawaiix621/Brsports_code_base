@@ -113,20 +113,20 @@ const SignIn = () => {
 Why just play for fun when you can play for rewards? Join thousands of gamers turning their passion into profit. Start winning today!
  </h4>
 
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScpw6rdcFnrBUeMXs5_7st_LNQpDWBKU6r1vv35odmMPU_mgg/viewform" target="_blank" rel="noopener noreferrer">
+       {/*   <a href="https://docs.google.com/forms/d/e/1FAIpQLScpw6rdcFnrBUeMXs5_7st_LNQpDWBKU6r1vv35odmMPU_mgg/viewform" target="_blank" rel="noopener noreferrer">
             <button style={{
               opacity: "1"
             }} type="button" >
               Register
             </button>
-          </a>
+          </a> */}
 
-          {/*
-          <button style={{
+               <button style={{
             opacity: "1"
           }} type="button" onClick={() => handleSignIn(signInWithGoogle)}>
-            Gamer's portal
-          </button> */ }
+            Sign in
+          </button> 
+
           {/*  <button  style={{
           opacity:"1"
         }} type="button" onClick={() => handleSignIn(signInWithTwitter)}>
