@@ -511,7 +511,7 @@ tbody tr:hover {
   background-color: #8c00ff;
   padding: 11px;
   color: #fff;
-  width: 80vw;
+  width: 300px;
   height: 55px;
   border-radius: 100px;
 }
@@ -534,7 +534,8 @@ tbody tr:hover {
 }
 
 .about {
-  color: rgb(36, 36, 36);
+
+  color:grey;
   font-size: large;
   margin: 10px;
 }

@@ -56,9 +56,7 @@ const SignIn = () => {
 
       <div className="header"> {/*Use className for styling*/}
         <h1 className="title">Welcome to BRsports</h1>
-        <p className="subtitle">Play daily, win big.
-          Join BRsports, the mobile battle
-          royale platform where skill pays off.</p>
+        <p className="subtitle">Play Battle royals to earn </p>
       </div>
 
 
@@ -75,7 +73,7 @@ const SignIn = () => {
 
         <h2>Dominate the Battle Royale & Earn Big.</h2>
         <p>
-          Tired of free-to-play frustration? At BRsports, you get to compete daily in high-stakes matches. For a monthly fee of just  ₦1000, you'll receive:
+At BRsports, you get to compete daily in high-stakes matches. For a monthly fee of just  ₦1000, you'll receive:
         </p> {/* Your about us text here */}
 
         <div>
@@ -87,7 +85,9 @@ const SignIn = () => {
             }}
               src="ban2.png">
             </img>
-            Win ₦3000 per victory! and Bigger Prize
+            ₦3000 per victory! and Bigger Prize Like 
+            new smart phones,Cash prizes, Airdrops 
+            and Crypto Currencies
             on sponsored matches
           </p>
          {/*<p>
@@ -108,7 +108,7 @@ const SignIn = () => {
 
           <h4
             style={{
-              color: "rgba(0,0,0,0.7)",
+              color: "rgba(0,0,0,0.35)",
               textAlign: "center",
               marginTop: "50px"
             }}>Pre-register now and continue your winning streak! </h4>
@@ -134,13 +134,19 @@ const SignIn = () => {
         </button> */}
         </div>
 
+        <h4
+            style={{
+              color: "rgba(0,0,0,0.35)",
+              textAlign: "center",
+              marginTop: "50px"
+            }}>Supported games</h4>
 
 
         <div style={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          marginTop: "30px",
+          marginTop: "10px",
           marginBottom: "30px"
         }}>
           <img className="gamesimg" src="codm.png"></img>
@@ -156,10 +162,7 @@ const SignIn = () => {
         <p>
           No more feeling like a loser after hours of gaming. BRsports provides a structured environment for competitive play with guaranteed opportunities to earn.  We offer daily matches and substantial winnings, ensuring that your time and effort translate into real rewards.  It's time to make your passion pay off.
         </p>
-
-
       </div>
-
       {/*Your Mission text */}
 
       <div style={{
@@ -185,7 +188,6 @@ const SignIn = () => {
           }}
             src="youtube.png"></img>
         </a>
-
       </div>
     </div>
   );
