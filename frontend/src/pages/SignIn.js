@@ -113,11 +113,11 @@ At BRsports, you get to compete daily in high-stakes matches. For a monthly fee 
               marginTop: "50px"
             }}>Pre-register now and continue your winning streak! </h4>
           
-  <a href="Google form url" target="_blank" rel="noopener noreferrer">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScpw6rdcFnrBUeMXs5_7st_LNQpDWBKU6r1vv35odmMPU_mgg/viewform" target="_blank" rel="noopener noreferrer">
           <button style={{
             opacity: "1"
           }} type="button" >
-            Join the wait-list
+            Join the Pre-match
           </button>
           </a>
 
@@ -168,7 +168,7 @@ At BRsports, you get to compete daily in high-stakes matches. For a monthly fee 
       <div style={{
         height: '100px', display: 'flex'
       }}>
-        <a href="your_x_page_url" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/brsports_xyz" target="_blank" rel="noopener noreferrer">
           <img style={{
             width: "40px",
             height: "40px",
@@ -178,7 +178,7 @@ At BRsports, you get to compete daily in high-stakes matches. For a monthly fee 
           }} src="x.png"></img>
         </a>
 
-        <a href="your_youtube_page_url" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtube.com/@brsports_xyz" target="_blank" rel="noopener noreferrer">
           <img style={{
             width: "50px",
             height: "50px",
