@@ -165,7 +165,7 @@ const SignIn = () => {
       <div style={{
         height: '100px', display: 'flex'
       }}>
-        <a href="your_x_page_url" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/brsports_xyz" target="_blank" rel="noopener noreferrer">
           <img style={{
             width: "40px",
             height: "40px",
@@ -175,7 +175,7 @@ const SignIn = () => {
           }} src="x.png"></img>
         </a>
 
-        <a href="your_youtube_page_url" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtube.com/@brsports_xyz" target="_blank" rel="noopener noreferrer">
           <img style={{
             width: "50px",
             height: "50px",
