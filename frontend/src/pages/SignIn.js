@@ -117,7 +117,7 @@ const SignIn = () => {
           <button style={{
             opacity: "1"
           }} type="button" >
-            Join the wait-list
+            Join the Pre-match
           </button>
           </a>
 
