@@ -1,4 +1,4 @@
-**BRsport - Battle Royale Matchmaking Platform**
+#BRsport - Battle Royale Matchmaking Platform#
 
 *BRsport is a web3-based matchmaking platform for mobile battle royale games. Players can join custom matches, compete, and earn tokens in a decentralized ecosystem.*
 
