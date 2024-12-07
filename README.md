@@ -1,4 +1,4 @@
-[No release at the moment ,lastest deployment at (https://www.brsports.vercel.app)
+[No release at the moment ,lastest deployment at](brsports.vercel.app)
 
 
 # BRsport 
